@@ -1,5 +1,9 @@
-@import "utility";
-main{
-    width: $width-page;
-    margin: 0 auto;
+@import 'utility';
+body {
+  margin: 0px;
+  background-color: #f5f4ff;
+}
+main {
+  width: $width-page;
+  margin: 0 auto;
 }
