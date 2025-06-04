@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 .header {
   width: 1300px;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-weight: 700;
   font-size: 16px;
   display: flex;
@@ -10,13 +10,11 @@
   margin: 0 auto;
   margin-bottom: 132px;
 }
-
 .header__text {
   color: #b4387a;
   letter-spacing: 0.02em;
   font-size: 24px;
 }
-
 .header .nav__list {
   padding: 0px;
   display: flex;
@@ -24,14 +22,12 @@
   gap: 40px;
   list-style-type: none;
 }
-
 .header .nav__text {
   color: #1d1929;
 }
-
 .header__button {
   color: #ffffff;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   letter-spacing: 0.02em;
   font-weight: 700;
   font-size: 16px;
@@ -41,19 +37,16 @@
   font-style: normal;
   padding: 16px;
 }
-
 .header__button:hover {
   background: #0131ce;
 }
-
 .header__button:active {
   background: #022bb1;
 }
-
 .header__button:focus {
   outline: none;
 }
 
 /* _Button Medium */
 /* Auto layout */
-/* Button Text */
+/* Button Text *//*# sourceMappingURL=header.css.map */

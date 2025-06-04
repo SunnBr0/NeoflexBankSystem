@@ -1,24 +1,21 @@
 .credit-card {
   display: flex;
   justify-content: space-between;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
 }
-
 .credit-card__section {
   height: 226px;
   width: 622px;
 }
-
 .credit-card__header {
   font-size: 48px;
   color: #1c1c1e;
 }
-
 .credit-card__button {
   color: #ffffff;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   letter-spacing: 0.02em;
   font-weight: 700;
   font-size: 16px;
@@ -28,19 +25,15 @@
   font-style: normal;
   padding: 16px;
 }
-
 .credit-card__button:hover {
   background: #0131ce;
 }
-
 .credit-card__button:active {
   background: #022bb1;
 }
-
 .credit-card__button:focus {
   outline: none;
 }
-
 .credit-card__list {
   display: flex;
   flex-wrap: wrap;
@@ -48,8 +41,7 @@
   width: 518px;
   height: 315px;
 }
-
 .credit-card__item {
   margin: 0px;
   flex: 1 1 250px;
-}
+}/*# sourceMappingURL=credit-card.css.map */
