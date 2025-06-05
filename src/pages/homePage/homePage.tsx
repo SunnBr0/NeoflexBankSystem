@@ -2,7 +2,7 @@ import React from 'react';
 import '../../style/homePage/header.css';
 import '../../style/homePage/main.css';
 import '../../style/homePage/credit-card.css';
-// import '../../style/homePage/feature-info.css';
+import '../../style/homePage/feature-info.css';
 import card1 from '../../assets/credit-card/card1.svg';
 import card2 from '../../assets/credit-card/card2.svg';
 import card3 from '../../assets/credit-card/card3.svg';
@@ -56,10 +56,28 @@ export const HomePage: React.FC = () => {
             <p>You can explore the features that we provide with fun and have their own functions each feature</p>
             <ul className='feature-info__list'>
               <li className='feature-info__item'>
-                <figure className='feature-info__icon'>
+                <figure className='feature-info__icon feature-info__icon-1'>
                   <img src={icon} alt="" />
                 </figure>
                 <p>Powerfull online protection.</p>
+              </li>
+              <li className='feature-info__item'>
+                <figure className='feature-info__icon feature-info__icon-2'>
+                  <img src={icon} alt="" />
+                </figure>
+                <p>Cashback without borders.</p>
+              </li>
+              <li className='feature-info__item'>
+                <figure className='feature-info__icon feature-info__icon-3'>
+                  <img src={icon} alt="" />
+                </figure>
+                <p>Personal design</p>
+              </li>
+              <li className='feature-info__item'>
+                <figure className='feature-info__icon feature-info__icon-4'>
+                  <img src={icon} alt="" />
+                </figure>
+                <p>Work anywhere in the world</p>
               </li>
             </ul>
           </section>
