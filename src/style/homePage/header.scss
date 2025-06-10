@@ -1,4 +1,6 @@
-@import 'utility';
+@import '../utility/font-family.scss';
+@import '../utility/size-value.scss';
+@import '../utility/button-style.scss';
 .header {
   width: $width-page;
   font-family: 'Ubuntu';

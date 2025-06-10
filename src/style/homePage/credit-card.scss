@@ -1,11 +1,12 @@
-@import 'utility';
+@import '../utility/font-family.scss';
+@import '../utility/button-style.scss';
 .credit-card {
   display: flex;
   justify-content: space-between;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 112px ;
+  margin-bottom: 112px;
   &__section {
     height: 226px;
     width: 622px;

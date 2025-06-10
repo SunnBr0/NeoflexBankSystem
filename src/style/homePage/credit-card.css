@@ -26,6 +26,7 @@
   border: 0px;
   font-style: normal;
   padding: 16px;
+  transition: background 0.3s;
 }
 .credit-card__button:hover {
   background: #0131ce;
