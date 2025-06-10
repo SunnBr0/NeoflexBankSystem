@@ -6,6 +6,7 @@ import '../../style/homePage/credit-card/credit-card.css';
 import '../../style/homePage/feature-info/feature-info.css';
 import '../../style/homePage/currency-card/currency-card.css';
 import '../../style/homePage/support/support.css';
+import '../../style/homePage/footer/footer.css';
 import card1 from '../../assets/credit-card/card1.svg';
 import card2 from '../../assets/credit-card/card2.svg';
 import card3 from '../../assets/credit-card/card3.svg';
@@ -16,6 +17,7 @@ import iconBank from '../../assets/currency-card/icon-bank.svg';
 import map from '../../assets/map.svg';
 import email from '../../assets/support/email.svg';
 import send from '../../assets/support/send.svg';
+import logo from '../../assets/logo.svg';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -155,7 +157,11 @@ export const HomePage: React.FC = () => {
               <figure className="support__figure">
                 <img src={email} alt="" />
               </figure>
-              <input className="support__input" type="email" placeholder="Your email" />
+              <input
+                className="support__input"
+                type="email"
+                placeholder="Your email"
+              />
               <button className="support__button">
                 <figure className="support__button-figure">
                   <img src={send} alt="" />
@@ -166,6 +172,38 @@ export const HomePage: React.FC = () => {
           </article>
         </section>
       </main>
+      <footer className="footer">
+        <section className="footer__section">
+          <section className="footer__section-header">
+            <figure className="footer__logo">
+              <img src={logo} alt="" />
+            </figure>
+            <aside className="footer__aside">
+              <h2>+7 (495) 984 25 13</h2>
+              <p>info@neoflex.ru</p>
+            </aside>
+          </section>
+          <ul className="footer__list">
+            <li className="footer__item">About bank</li>
+            <li className="footer__item">Ask a Question</li>
+            <li className="footer__item">Quality of service</li>
+            <li className="footer__item">Requisites</li>
+            <li className="footer__item">Press center</li>
+            <li className="footer__item">Bank career</li>
+            <li className="footer__item">Investors</li>
+            <li className="footer__item">Analytics</li>
+            <li className="footer__item">Business and processes</li>
+            <li className="footer__item">Compliance and business ethics</li>
+          </ul>
+          <hr className="footer__line" />
+          <p className="footer__description">
+            We use cookies to personalize our services and improve the user
+            experience of our website. Cookies are small files containing
+            information about previous visits to a website. If you do not want
+            to use cookies, please change your browser settings
+          </p>
+        </section>
+      </footer>
     </>
   );
 };
