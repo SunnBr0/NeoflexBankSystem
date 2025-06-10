@@ -10,6 +10,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 32px;
+  margin-bottom: 48px;
 }
 .currency-card__section {
   display: flex;

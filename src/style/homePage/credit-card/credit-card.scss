@@ -1,5 +1,4 @@
-@import '../utility/font-family.scss';
-@import '../utility/button-style.scss';
+@import '../../utility/button-style.scss';
 .credit-card {
   display: flex;
   justify-content: space-between;
@@ -13,7 +12,6 @@
   }
   &__header {
     font-size: 48px;
-    // line-height: 50px;
     color: #1c1c1e;
   }
   &__button {

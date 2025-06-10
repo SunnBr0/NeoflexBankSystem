@@ -1,9 +1,11 @@
 import React from 'react';
-import '../../style/homePage/header.css';
-import '../../style/homePage/main.css';
-import '../../style/homePage/credit-card.css';
-import '../../style/homePage/feature-info.css';
-import '../../style/homePage/currency-card.css';
+import '../../style/homePage/header/header.css';
+import '../../style/homePage/map/map.css';
+import '../../style/homePage/main/main.css';
+import '../../style/homePage/credit-card/credit-card.css';
+import '../../style/homePage/feature-info/feature-info.css';
+import '../../style/homePage/currency-card/currency-card.css';
+import '../../style/homePage/support/support.css';
 import card1 from '../../assets/credit-card/card1.svg';
 import card2 from '../../assets/credit-card/card2.svg';
 import card3 from '../../assets/credit-card/card3.svg';
@@ -11,6 +13,9 @@ import card4 from '../../assets/credit-card/card4.svg';
 import feature from '../../assets/feature.svg';
 import icon from '../../assets/icon.svg';
 import iconBank from '../../assets/currency-card/icon-bank.svg';
+import map from '../../assets/map.svg';
+import email from '../../assets/support/email.svg';
+import send from '../../assets/support/send.svg';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -124,13 +129,41 @@ export const HomePage: React.FC = () => {
             <p className="currency-card__subtext">All courses</p>
           </section>
           <aside className="currency-card__aside">
-            <p>
-              Update every 15 minutes, MSC 09.08.2022
-            </p>
+            <p>Update every 15 minutes, MSC 09.08.2022</p>
             <figure className="currency-card__figure">
               <img src={iconBank} alt="" />
             </figure>
           </aside>
+        </section>
+        <section className="map">
+          <h2 className="map__header">
+            You can use our services anywhere in the world
+          </h2>
+          <p className="map__title">
+            Withdraw and transfer money online through our application
+          </p>
+          <figure className="map__figure">
+            <img src={map} alt="" />
+          </figure>
+        </section>
+        <section className="support">
+          <p className="support__title">Support</p>
+          <h2 className="support__header">Subscribe Newsletter & get</h2>
+          <h2 className="support__subtext">Bank News</h2>
+          <article className="support__article">
+            <form className="support__form" action="">
+              <figure className="support__figure">
+                <img src={email} alt="" />
+              </figure>
+              <input className="support__input" type="email" placeholder="Your email" />
+              <button className="support__button">
+                <figure className="support__button-figure">
+                  <img src={send} alt="" />
+                </figure>
+                <p className="support__button-title">Subscribe</p>
+              </button>
+            </form>
+          </article>
         </section>
       </main>
     </>

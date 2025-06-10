@@ -1,10 +1,11 @@
-@import '../utility/size-value.scss';
+@import '../../utility/size-value.scss';
+@import '../../utility//font-family.scss';
 body {
   margin: 0px;
   background-color: #f5f4ff;
 }
 main {
   width: $width-page;
-  height: 1600px;
+  height: 3200px;
   margin: 0 auto;
 }

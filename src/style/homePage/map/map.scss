@@ -1,0 +1,21 @@
+.map {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  color: #1c1c1c;
+  &__header {
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 8px 0;
+  }
+  &__title {
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 48px 0;
+  }
+  &__figure{
+    margin: 0 11% 48px 8%;
+  }
+}

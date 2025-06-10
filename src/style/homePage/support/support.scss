@@ -1,0 +1,94 @@
+.support {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  &__title {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #eb801d;
+  }
+  &__header {
+    margin: 0 0 27px 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1c1c1e;
+  }
+  &__subtext {
+    margin: 0 0 62px 0;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1c1c1e;
+  }
+  &__article {
+    margin: 0 auto;
+    width: 525px;
+    height: 90px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(54, 58, 120, 0.1);
+    border-radius: 20px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+  }
+  &__figure {
+    margin: 0 10px 0 32px;
+    img {
+      padding: 26px 0;
+    }
+  }
+  &__input {
+    border: none;
+    margin: 31px 10px 31px 0;
+    padding: 0;
+    width: 249px;
+    height: 27.14px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #9092b0;
+  }
+
+  &__button {
+    width: 162px;
+    height: 45px;
+    border: none;
+    padding: 0px;
+    // margin: auto 0px;
+    margin: auto 32px auto 0px;
+    background: #686df1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    transition: background 0.3s;
+    &-figure {
+      margin: 0 11px 5px 14px;
+    }
+    &-title {
+      font-family: 'Ubuntu';
+      margin: auto 0;
+      font-weight: 700;
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+  &__button:hover {
+    background: #595cbe;
+  }
+  &__button:active {
+    background: #484b99;
+  }
+}
