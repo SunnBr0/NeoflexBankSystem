@@ -1,9 +1,11 @@
 .feature-info {
   font-family: "Rubik";
+  width: 1300px;
   font-style: normal;
   display: flex;
   justify-content: space-between;
   margin-bottom: 48px;
+  margin: 0 auto;
 }
 .feature-info__img {
   margin: 0;
@@ -66,4 +68,42 @@
   font-size: 14px;
   line-height: 30px;
   color: #4f5665;
+}
+@media (max-width: 1300px) {
+  .feature-info {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media (max-width: 1230px) {
+  .feature-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-info__img {
+    order: 1;
+    position: relative;
+    bottom: 150px;
+    right: 240px;
+  }
+  .feature-info__img img {
+    width: 400px;
+    height: 400px;
+  }
+  .feature-info__list {
+    position: relative;
+    left: 490px;
+    top: 120px;
+    width: 420px;
+    height: 152px;
+  }
+  .feature-info__item {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .feature-info__item p {
+    line-height: 30px;
+  }
 }/*# sourceMappingURL=feature-info.css.map */

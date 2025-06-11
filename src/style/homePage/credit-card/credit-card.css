@@ -1,9 +1,12 @@
 .credit-card {
+  width: 1300px;
   display: flex;
   justify-content: space-between;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
+  align-items: center;
+  margin: 0 auto;
   margin-bottom: 112px;
 }
 .credit-card__section {
@@ -39,10 +42,74 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  width: 518px;
+  width: 520px;
   height: 315px;
 }
 .credit-card__item {
   margin: 0px;
   flex: 1 1 250px;
+}
+@media (max-width: 1300px) {
+  .credit-card {
+    width: 100%;
+  }
+}
+@media (max-width: 1230px) {
+  .credit-card {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .credit-card__section {
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+  }
+  .credit-card__button {
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 16px;
+    background: #003cff;
+    border-radius: 16px;
+    border: 0px;
+    font-style: normal;
+    padding: 16px;
+    transition: background 0.3s;
+    margin: 0 215px;
+  }
+  .credit-card__button:hover {
+    background: #0131ce;
+  }
+  .credit-card__button:active {
+    background: #022bb1;
+  }
+  .credit-card__button:focus {
+    outline: none;
+  }
+  .credit-card__header {
+    font-size: 48px;
+    text-align: center;
+    color: #1c1c1e;
+  }
+  .credit-card__list {
+    flex-direction: column;
+    justify-content: start;
+    height: 150px;
+    width: 1045px;
+  }
+}
+@media (max-width: 1080px) {
+  .credit-card__list {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    width: 518px;
+    height: 315px;
+  }
+  .credit-card__section {
+    display: flex;
+    flex-direction: column;
+    gap: 320px;
+  }
 }/*# sourceMappingURL=credit-card.css.map */

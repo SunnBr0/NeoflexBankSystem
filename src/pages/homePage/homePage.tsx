@@ -13,11 +13,11 @@ import card3 from '../../assets/credit-card/card3.svg';
 import card4 from '../../assets/credit-card/card4.svg';
 import feature from '../../assets/feature.svg';
 import icon from '../../assets/icon.svg';
-import iconBank from '../../assets/currency-card/icon-bank.svg';
-import map from '../../assets/map.svg';
-import email from '../../assets/support/email.svg';
-import send from '../../assets/support/send.svg';
-import logo from '../../assets/logo.svg';
+// import iconBank from '../../assets/currency-card/icon-bank.svg';
+// import map from '../../assets/map.svg';
+// import email from '../../assets/support/email.svg';
+// import send from '../../assets/support/send.svg';
+// import logo from '../../assets/logo.svg';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -96,7 +96,7 @@ export const HomePage: React.FC = () => {
             </ul>
           </section>
         </section>
-        <section className="currency-card">
+        {/* <section className="currency-card">
           <section className="currency-card__section">
             <h2 className="currency-card__header">
               Exchange rate in internet bank
@@ -170,9 +170,9 @@ export const HomePage: React.FC = () => {
               </button>
             </form>
           </article>
-        </section>
+        </section> */}
       </main>
-      <footer className="footer">
+      {/* <footer className="footer">
         <section className="footer__section">
           <section className="footer__section-header">
             <figure className="footer__logo">
@@ -203,7 +203,7 @@ export const HomePage: React.FC = () => {
             to use cookies, please change your browser settings
           </p>
         </section>
-      </footer>
+      </footer> */}
     </>
   );
 };

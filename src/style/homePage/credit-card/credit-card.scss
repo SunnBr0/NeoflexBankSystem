@@ -1,10 +1,14 @@
 @import '../../utility/button-style.scss';
+@import '../../utility/size-value.scss';
 .credit-card {
+  width: $width-page;
   display: flex;
   justify-content: space-between;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
+  align-items: center;
+  margin: 0 auto;
   margin-bottom: 112px;
   &__section {
     height: 226px;
@@ -21,11 +25,54 @@
     display: flex;
     flex-wrap: wrap;
     gap: 14px;
-    width: 518px;
+    width: 520px;
     height: 315px;
   }
   &__item {
     margin: 0px;
     flex: 1 1 250px;
+  }
+  // Медиазапрос для разрешения меньше 1300px
+  @media (max-width: 1300px) {
+    width: 100%;
+  }
+  @media (max-width: 1230px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    &__section {
+      display: flex;
+      flex-direction: column;
+      gap: 160px;
+    }
+    &__button {
+      @include button-styles(16px);
+      margin: 0 215px;
+    }
+    &__header {
+      font-size: 48px;
+      text-align: center;
+      color: #1c1c1e;
+    }
+    &__list {
+      flex-direction: column;
+      justify-content: start;
+      height: 150px;
+      width: 1045px;
+    }
+  }
+  @media (max-width: 1080px) {
+    &__list {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      width: 518px;
+      height: 315px;
+    }
+    &__section {
+      display: flex;
+      flex-direction: column;
+      gap: 320px;
+    }
   }
 }
