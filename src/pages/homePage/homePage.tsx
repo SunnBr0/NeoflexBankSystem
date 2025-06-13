@@ -13,7 +13,7 @@ import card3 from '../../assets/credit-card/card3.svg';
 import card4 from '../../assets/credit-card/card4.svg';
 import feature from '../../assets/feature.svg';
 import icon from '../../assets/icon.svg';
-// import iconBank from '../../assets/currency-card/icon-bank.svg';
+import iconBank from '../../assets/currency-card/icon-bank.svg';
 // import map from '../../assets/map.svg';
 // import email from '../../assets/support/email.svg';
 // import send from '../../assets/support/send.svg';
@@ -96,7 +96,7 @@ export const HomePage: React.FC = () => {
             </ul>
           </section>
         </section>
-        {/* <section className="currency-card">
+        <section className="currency-card">
           <section className="currency-card__section">
             <h2 className="currency-card__header">
               Exchange rate in internet bank
@@ -137,7 +137,7 @@ export const HomePage: React.FC = () => {
             </figure>
           </aside>
         </section>
-        <section className="map">
+        {/* <section className="map">
           <h2 className="map__header">
             You can use our services anywhere in the world
           </h2>
