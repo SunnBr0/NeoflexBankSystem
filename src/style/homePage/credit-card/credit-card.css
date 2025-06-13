@@ -59,6 +59,7 @@
 }
 @media (max-width: 1220px) {
   .credit-card {
+    margin-bottom: 198px;
     flex-direction: column;
     align-items: center;
   }
@@ -67,6 +68,7 @@
     width: 622px;
   }
   .credit-card__header {
+    text-align: center;
     font-size: 46px;
     color: #1c1c1e;
     margin-bottom: 36px;
@@ -105,6 +107,12 @@
     flex-direction: column;
     align-items: center;
   }
+  .credit-card__header {
+    font-size: 46px;
+    color: #1c1c1e;
+    margin-bottom: 36px;
+    margin-top: 0px;
+  }
   .credit-card__button {
     color: #ffffff;
     letter-spacing: 0.02em;
@@ -133,11 +141,12 @@
     height: 315px;
   }
 }
-@media (max-width: 630px) {
+@media (max-width: 650px) {
   .credit-card {
     flex-direction: column;
     margin: 0 auto;
     width: 500px;
+    margin-bottom: 112px;
     align-items: center;
   }
   .credit-card__section {
@@ -146,6 +155,7 @@
   }
   .credit-card__list {
     width: 253px;
+    height: 652px;
   }
   .credit-card__button {
     color: #ffffff;
@@ -158,7 +168,7 @@
     font-style: normal;
     padding: 16px;
     transition: background 0.3s;
-    margin-left: 170px;
+    margin-left: 169px;
     margin-top: 691px;
   }
   .credit-card__button:hover {
