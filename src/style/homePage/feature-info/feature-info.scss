@@ -1,5 +1,16 @@
 @import '../../utility/button-style.scss';
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
+
+$font-size-header: 35px;
+$font-size-title: 16px;
+$font-size-text-item: 14px;
 .feature-info {
+  width: 1300px;
+  margin: 0 auto;
   font-family: 'Rubik';
   font-style: normal;
   display: flex;
@@ -12,19 +23,19 @@
     margin-top: 74px;
     margin-bottom: 20px;
     font-weight: 500;
-    font-size: 35px;
+    font-size: $font-size-header;
     color: #0b132a;
   }
   &__section {
     display: flex;
     flex-direction: column;
-    p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      margin-bottom: 25px;
-      color: #4f5665;
-    }
+  }
+  &__header-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $font-size-title;
+    margin-bottom: 25px;
+    color: #65544f;
   }
   &__list {
     margin: 0px;
@@ -62,9 +73,93 @@
     p {
       margin: 0px;
       font-weight: 400;
-      font-size: 14px;
+      font-size: $font-size-text-item;
       line-height: 30px;
       color: #4f5665;
+    }
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 96%;
+  }
+  @media (max-width: $breakpoint-desktop) {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__img {
+      position: relative;
+      bottom: 156px;
+      right: 140px;
+      order: 1;
+      img {
+        width: 400px;
+      }
+    }
+    &__list {
+      position: relative;
+      top: 80px;
+      right: 40px;
+      margin-left: auto;
+    }
+    &__header-title {
+      font-size: $font-size-title - 2;
+    }
+  }
+  @media (max-width: $breakpoint-small-tablet) {
+    text-align: center;
+
+    &__img {
+      img {
+        width: 330px;
+      }
+    }
+    &__section {
+      p {
+        font-size: $font-size-title - 3;
+      }
+    }
+    &__header {
+      font-size: $font-size-header - 3;
+    }
+    &__item {
+      p {
+        font-size: $font-size-text-item;
+      }
+    }
+    &__list {
+      top: 50px;
+    }
+  }
+  @media (max-width: $breakpoint-large-mobile) {
+    width: 500px;
+    text-align: center;
+    &__img {
+      img {
+        width: 200px;
+      }
+    }
+    &__section {
+      p {
+        font-size: $font-size-title - 7;
+      }
+    }
+    &__header {
+      font-size: $font-size-header - 10;
+    }
+    &__item {
+      p {
+        font-size: $font-size-text-item - 5;
+      }
+      gap: 10px
+    }
+    &__list {
+      top: 0px;
+    }
+    &__icon {
+      img {
+        width: 23px;
+      }
     }
   }
 }
