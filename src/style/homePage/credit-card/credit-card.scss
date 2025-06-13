@@ -13,6 +13,8 @@
   &__header {
     font-size: 48px;
     color: #1c1c1e;
+    margin-bottom: 36px;
+    margin-top: 0px
   }
   &__button {
     @include button-styles(16px);
