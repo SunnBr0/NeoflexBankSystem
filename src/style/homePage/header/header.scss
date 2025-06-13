@@ -1,10 +1,13 @@
 @import '../../utility/size-value.scss';
 @import '../../utility/button-style.scss';
+$font-size-header: 16px;
+$font-size-logo: 24px;
+$media-size-value: 1350px;
 .header {
   width: $width-page;
   font-family: 'Ubuntu';
   font-weight: 700;
-  font-size: 16px;
+  font-size: $font-size-header;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +17,7 @@
   &__text {
     color: #b4387a;
     letter-spacing: 0.02em;
-    font-size: 24px;
+    font-size: $font-size-logo;
   }
   .nav {
     &__list {
@@ -31,23 +34,24 @@
   &__button {
     @include button-styles(16px);
   }
-  // 920px
-  @media (max-width: 1300px) {
+  @media (max-width: $media-size-value) {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  // 500px
-  @media (max-width: 1230px) {
+  @media (max-width: ($media-size-value - 70)) {
+    margin-bottom: 40px;
     flex-direction: column;
     &__text {
       color: #b4387a;
       margin-bottom: 10px;
       margin-top: 25px;
-      font-size: 50px;
+      font-size: $font-size-logo + 26;
     }
     .nav {
       &__text {
         color: #1d1929;
-        font-size: 24px;
+        font-size: $font-size-header + 8;
       }
       &__list {
         margin-bottom: 24px;
@@ -57,18 +61,18 @@
       @include button-styles(16px, 24px);
     }
   }
-  @media (max-width: 560px) {
+  @media (max-width: ($media-size-value - 670)) {
     flex-direction: column;
     &__text {
       color: #b4387a;
       margin-bottom: 10px;
       margin-top: 25px;
-      font-size: 40px;
+      font-size: $font-size-logo + 16px;
     }
     .nav {
       &__text {
         color: #1d1929;
-        font-size: 16px;
+        font-size: $font-size-header;
       }
       &__list {
         margin-bottom: 24px;

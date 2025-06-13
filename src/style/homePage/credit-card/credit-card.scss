@@ -1,5 +1,8 @@
 @import '../../utility/button-style.scss';
 @import '../../utility/size-value.scss';
+$font-size-header: 48px;
+$media-size-value:130px;
+// $font-size-logo:24px;
 .credit-card {
   width: $width-page;
   display: flex;
@@ -15,7 +18,7 @@
     width: 622px;
   }
   &__header {
-    font-size: 48px;
+    font-size: $font-size-header;
     color: #1c1c1e;
   }
   &__button {
@@ -33,10 +36,10 @@
     flex: 1 1 250px;
   }
   // Медиазапрос для разрешения меньше 1300px
-  @media (max-width: 1300px) {
+  @media (max-width: $media-size-value) {
     width: 100%;
   }
-  @media (max-width: 1230px) {
+  @media (max-width: ($media-size-value - 70px)) {
     flex-wrap: wrap;
     flex-direction: column;
     &__section {
@@ -49,7 +52,7 @@
       margin: 0 215px;
     }
     &__header {
-      font-size: 48px;
+      font-size: $font-size-header;
       text-align: center;
       color: #1c1c1e;
     }
@@ -60,10 +63,17 @@
       width: 1045px;
     }
   }
-  @media (max-width: 1080px) {
+  @media (max-width:  ($media-size-value - 220px) ) {
+    width: 100%;
+    &__header {
+      font-size: $font-size-header - 12;
+      text-align: center;
+    }
     &__list {
       flex-direction: row;
       display: flex;
+      position: relative;
+      bottom: 80px;
       flex-wrap: wrap;
       gap: 14px;
       width: 518px;
@@ -72,7 +82,30 @@
     &__section {
       display: flex;
       flex-direction: column;
-      gap: 320px;
+      gap: 340px;
     }
+  }
+  @media (max-width: ($media-size-value - 670)) {
+    width: 630px;
+
+    &__header {
+      font-size: $font-size-header - 18;
+      text-align: center;
+    }
+    &__list {
+      flex-direction: row;
+      display: flex;
+      gap: 14px;
+      width: 252px;
+      height: 315px;
+      position: relative;
+      bottom: 105px;
+    }
+    &__section {
+      display: flex;
+      flex-direction: column;
+      gap: 670px;
+    }
+    margin-bottom: 312px;
   }
 }

@@ -49,12 +49,12 @@
   margin: 0px;
   flex: 1 1 250px;
 }
-@media (max-width: 1300px) {
+@media (max-width: 130px) {
   .credit-card {
     width: 100%;
   }
 }
-@media (max-width: 1230px) {
+@media (max-width: 60px) {
   .credit-card {
     flex-wrap: wrap;
     flex-direction: column;
@@ -98,10 +98,19 @@
     width: 1045px;
   }
 }
-@media (max-width: 1080px) {
+@media (max-width: -90px) {
+  .credit-card {
+    width: 100%;
+  }
+  .credit-card__header {
+    font-size: 36px;
+    text-align: center;
+  }
   .credit-card__list {
     flex-direction: row;
     display: flex;
+    position: relative;
+    bottom: 80px;
     flex-wrap: wrap;
     gap: 14px;
     width: 518px;
@@ -110,6 +119,30 @@
   .credit-card__section {
     display: flex;
     flex-direction: column;
-    gap: 320px;
+    gap: 340px;
+  }
+}
+@media (max-width: -540px) {
+  .credit-card {
+    width: 630px;
+    margin-bottom: 312px;
+  }
+  .credit-card__header {
+    font-size: 30px;
+    text-align: center;
+  }
+  .credit-card__list {
+    flex-direction: row;
+    display: flex;
+    gap: 14px;
+    width: 252px;
+    height: 315px;
+    position: relative;
+    bottom: 105px;
+  }
+  .credit-card__section {
+    display: flex;
+    flex-direction: column;
+    gap: 670px;
   }
 }/*# sourceMappingURL=credit-card.css.map */

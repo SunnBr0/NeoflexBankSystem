@@ -46,13 +46,16 @@
 .header__button:focus {
   outline: none;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .header {
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
-@media (max-width: 1230px) {
+@media (max-width: 1280px) {
   .header {
+    margin-bottom: 40px;
     flex-direction: column;
   }
   .header__text {
@@ -90,7 +93,7 @@
     outline: none;
   }
 }
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .header {
     flex-direction: column;
   }
