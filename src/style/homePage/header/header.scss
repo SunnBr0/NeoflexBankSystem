@@ -1,10 +1,17 @@
 @import '../../utility/size-value.scss';
 @import '../../utility/button-style.scss';
+$breakpoint-large-desktop: 1350px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 630px;
+
+$font-size-logo: 24px;
+$font-size-nav: 16px;
+$font-size-button: 16px;
 .header {
   width: $width-page;
   font-family: 'Ubuntu';
   font-weight: 700;
-  font-size: 16px;
+  font-size: $font-size-nav;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +21,7 @@
   &__text {
     color: #b4387a;
     letter-spacing: 0.02em;
-    font-size: 24px;
+    font-size: $font-size-logo;
   }
   .nav {
     &__list {
@@ -31,51 +38,64 @@
   &__button {
     @include button-styles(16px);
   }
-  // 920px
-  @media (max-width: 1300px) {
-    width: 100%;
+
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 96%;
   }
-  // 500px
-  @media (max-width: 1230px) {
+  @media (max-width: $breakpoint-small-tablet) {
     flex-direction: column;
-    &__text {
-      color: #b4387a;
-      margin-bottom: 10px;
-      margin-top: 25px;
-      font-size: 50px;
+    &__nav {
+      margin-bottom: 12px;
     }
     .nav {
+      &__list {
+        padding: 0px;
+        flex-direction: row;
+        justify-content: center;
+      }
       &__text {
         color: #1d1929;
-        font-size: 24px;
-      }
-      &__list {
-        margin-bottom: 24px;
+        font-size: $font-size-nav + 10px;
       }
     }
-    &__button {
-      @include button-styles(16px, 24px);
-    }
-  }
-  @media (max-width: 560px) {
-    flex-direction: column;
     &__text {
       color: #b4387a;
-      margin-bottom: 10px;
-      margin-top: 25px;
-      font-size: 40px;
-    }
-    .nav {
-      &__text {
-        color: #1d1929;
-        font-size: 16px;
-      }
-      &__list {
-        margin-bottom: 24px;
-      }
+      letter-spacing: 0.02em;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-size: $font-size-nav + 40px;
     }
     &__button {
-      @include button-styles(16px);
+      @include button-styles(16px, $font-size-button + 5px);
+    }
+  }
+  
+  @media (max-width: $breakpoint-large-mobile) {
+    width: 500px;
+    flex-direction: column;
+    &__nav {
+      margin-bottom: 12px;
+    }
+    .nav {
+      &__list {
+        padding: 0px;
+        flex-direction: row;
+        justify-content: center;
+      }
+      &__text {
+        color: #1d1929;
+        font-size: $font-size-nav + 3px;
+      }
+    }
+    &__text {
+      color: #b4387a;
+      letter-spacing: 0.02em;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      font-size: $font-size-nav + 25px;
+    }
+    &__button {
+      @include button-styles(16px, $font-size-button + 1px);
     }
   }
 }

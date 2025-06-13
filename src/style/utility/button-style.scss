@@ -1,8 +1,8 @@
-@mixin button-styles($border-radius,$font-size:16px) {
+@mixin button-styles($border-radius,$font-size-button:16px) {
   color: #ffffff;
   letter-spacing: 0.02em;
   font-weight: 700;
-  font-size: $font-size;
+  font-size: $font-size-button;
   background: #003cff;
   border-radius: $border-radius;
   border: 0px;
