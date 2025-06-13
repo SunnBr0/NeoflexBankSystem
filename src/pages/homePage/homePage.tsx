@@ -11,13 +11,13 @@ import card1 from '../../assets/credit-card/card1.svg';
 import card2 from '../../assets/credit-card/card2.svg';
 import card3 from '../../assets/credit-card/card3.svg';
 import card4 from '../../assets/credit-card/card4.svg';
-import feature from '../../assets/feature.svg';
-import icon from '../../assets/icon.svg';
-import iconBank from '../../assets/currency-card/icon-bank.svg';
-import map from '../../assets/map.svg';
-import email from '../../assets/support/email.svg';
-import send from '../../assets/support/send.svg';
-import logo from '../../assets/logo.svg';
+// import feature from '../../assets/feature.svg';
+// import icon from '../../assets/icon.svg';
+// import iconBank from '../../assets/currency-card/icon-bank.svg';
+// import map from '../../assets/map.svg';
+// import email from '../../assets/support/email.svg';
+// import send from '../../assets/support/send.svg';
+// import logo from '../../assets/logo.svg';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -56,7 +56,7 @@ export const HomePage: React.FC = () => {
             </figure>
           </aside>
         </section>
-        <section className="feature-info">
+        {/* <section className="feature-info">
           <figure className="feature-info__img">
             <img src={feature} alt="" />
           </figure>
@@ -170,9 +170,9 @@ export const HomePage: React.FC = () => {
               </button>
             </form>
           </article>
-        </section>
+        </section> */}
       </main>
-      <footer className="footer">
+      {/* <footer className="footer">
         <section className="footer__section">
           <section className="footer__section-header">
             <figure className="footer__logo">
@@ -203,7 +203,7 @@ export const HomePage: React.FC = () => {
             to use cookies, please change your browser settings
           </p>
         </section>
-      </footer>
+      </footer> */}
     </>
   );
 };
