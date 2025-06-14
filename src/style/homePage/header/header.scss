@@ -1,22 +1,17 @@
 @import '../../utility/size-value.scss';
 @import '../../utility/button-style.scss';
-$breakpoint-large-desktop: 1350px;
-$breakpoint-small-tablet: 768px;
-$breakpoint-large-mobile: 650px;
-
 $font-size-logo: 24px;
 $font-size-nav: 16px;
 $font-size-button: 16px;
 .header {
-  width: $width-page;
+  width:1300px;
   font-family: 'Ubuntu';
   font-weight: 700;
   font-size: $font-size-nav;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 132px;
+  margin: 0 auto 132px auto;
   &__text {
     color: #b4387a;
     letter-spacing: 0.02em;
@@ -31,7 +26,17 @@ $font-size-button: 16px;
       list-style-type: none;
     }
     &__text {
-      color: #1d1929;
+      a {
+        text-decoration: none;
+        color: #1d1929;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #b2a35f;
+      }
+      a:active {
+        color: #e7d37b;
+      }
     }
   }
   &__button {
@@ -68,7 +73,7 @@ $font-size-button: 16px;
       @include button-styles(16px, $font-size-button + 5px);
     }
   }
-  
+
   @media (max-width: $breakpoint-large-mobile) {
     width: 500px;
     flex-direction: column;

@@ -1,9 +1,4 @@
-$breakpoint-large-desktop: 1350px;
-$breakpoint-desktop: 1220px;
-$breakpoint-small-desktop: 1110px;
-$breakpoint-small-tablet: 768px;
-$breakpoint-large-mobile: 650px;
-
+@import '../../utility/size-value.scss';
 $font-size-header: 30px;
 $font-size-title: 20px;
 $font-size-text-aside: 16px;
@@ -20,7 +15,7 @@ $font-size-text-aside: 16px;
     0px 0px 4px rgba(0, 0, 0, 0.08),
     0px 2px 4px rgba(187, 187, 187, 0.2);
   width: 1236px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
@@ -29,19 +24,16 @@ $font-size-text-aside: 16px;
   flex-direction: row;
   justify-content: space-between;
   padding: 32px;
-  margin-bottom: 48px;
   &__header {
     font-size: $font-size-header;
-    margin: 0px;
-    margin-bottom: 21px;
+    margin: 0 0 21px 0;
     line-height: 50px;
     color: #1c1c1e;
   }
   &__title {
     font-size: $font-size-title;
     line-height: 50px;
-    margin: 0px;
-    margin-bottom: 32px;
+    margin: 0 0 32px 0;
     color: #000000;
   }
   &__subtext {
@@ -70,8 +62,8 @@ $font-size-text-aside: 16px;
     }
   }
   &__list {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0 0 51px 0;
     display: flex;
     width: 410px;
     height: 76px;
@@ -79,7 +71,6 @@ $font-size-text-aside: 16px;
     flex-wrap: wrap;
     list-style-type: none;
     gap: 32px;
-    margin-bottom: 51px;
   }
   &__item {
     display: flex;
@@ -149,14 +140,13 @@ $font-size-text-aside: 16px;
     &__list {
       width: 288px;
       padding: 0px;
-      margin: 0px;
+      margin: 0 0 51px 0;
       display: flex;
       height: 76px;
       flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
       gap: 14px;
-      margin-bottom: 51px;
     }
   }
   @media (max-width: $breakpoint-large-mobile) {
@@ -188,38 +178,13 @@ $font-size-text-aside: 16px;
     &__list {
       width: 248px;
       padding: 0px;
-      margin: 0px;
+      margin: 0 0 51px 0;
       display: flex;
-      // width: 410px;
       height: 76px;
       flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
       gap: 14px;
-      margin-bottom: 51px;
     }
   }
 }
-
-//  &__header {
-//       font-size: $font-size-header - 2;
-//     }
-// &__title {
-//   font-size: $font-size-title;
-// }
-// &__subtext {
-//   font-size: $font-size-title;
-// }
-//     &__aside {
-//       p {
-//         font-size: $font-size-text-aside - 1;
-//       }
-//     }
-//     &__item {
-//       h3 {
-//         font-size: $font-size-title;
-//       }
-//       p {
-//         font-size: $font-size-title;
-//       }
-//     }

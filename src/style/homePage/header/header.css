@@ -6,8 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 132px;
+  margin: 0 auto 132px auto;
 }
 .header__text {
   color: #b4387a;
@@ -21,8 +20,16 @@
   gap: 40px;
   list-style-type: none;
 }
-.header .nav__text {
+.header .nav__text a {
+  text-decoration: none;
   color: #1d1929;
+}
+.header .nav__text a:hover {
+  text-decoration: none;
+  color: #b2a35f;
+}
+.header .nav__text a:active {
+  color: #e7d37b;
 }
 .header__button {
   color: #ffffff;

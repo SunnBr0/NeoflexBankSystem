@@ -1,11 +1,10 @@
 .feature-info {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   font-family: "Rubik";
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
 }
 .feature-info__img {
   margin: 0;

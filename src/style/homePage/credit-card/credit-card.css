@@ -1,12 +1,11 @@
 .credit-card {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 112px auto;
   display: flex;
   justify-content: space-between;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 112px;
 }
 .credit-card__section {
   height: 226px;
@@ -146,9 +145,8 @@
 @media (max-width: 650px) {
   .credit-card {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 112px auto;
     width: 500px;
-    margin-bottom: 112px;
     align-items: center;
   }
   .credit-card__section {

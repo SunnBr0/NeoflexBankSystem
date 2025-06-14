@@ -1,9 +1,4 @@
-$breakpoint-large-desktop: 1350px;
-$breakpoint-desktop: 1220px;
-$breakpoint-small-desktop: 1110px;
-$breakpoint-small-tablet: 768px;
-$breakpoint-large-mobile: 650px;
-
+@import '../../utility/size-value.scss';
 $font-size-header: 30px;
 $font-size-title: 24px;
 $font-size-subtext: 30px;
@@ -11,10 +6,9 @@ $font-size-input: 20px;
 $font-size-button-title: 16px;
 .support {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 98px auto;
   font-family: 'Ubuntu';
   font-style: normal;
-  margin-bottom: 98px;
   &__title {
     margin: 0 0 30px 0;
     font-weight: 700;
@@ -81,7 +75,6 @@ $font-size-button-title: 16px;
     height: 45px;
     border: none;
     padding: 0px;
-    // margin: auto 0px;
     margin: auto 32px auto 0px;
     background: #686df1;
     border-radius: 20px;

@@ -1,21 +1,15 @@
 @import '../../utility/button-style.scss';
-$breakpoint-large-desktop: 1350px;
-$breakpoint-desktop: 1220px;
-$breakpoint-small-desktop: 1110px;
-$breakpoint-small-tablet: 768px;
-$breakpoint-large-mobile: 650px;
-
+@import '../../utility/size-value.scss';
 $font-size-header: 35px;
 $font-size-title: 16px;
 $font-size-text-item: 14px;
 .feature-info {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   font-family: 'Rubik';
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
   &__img {
     margin: 0;
   }
