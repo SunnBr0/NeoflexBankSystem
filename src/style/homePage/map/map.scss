@@ -1,21 +1,85 @@
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
+
+$font-size-header: 30px;
+$font-size-title: 16px;
 .map {
+  width: 1300px;
+  margin: 0 auto;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   color: #1c1c1c;
   &__header {
-    font-size: 30px;
+    font-size: $font-size-header;
     line-height: 50px;
     text-align: center;
     margin: 0 0 8px 0;
   }
   &__title {
-    font-size: 16px;
+    font-size: $font-size-title;
     line-height: 50px;
     text-align: center;
     margin: 0 0 48px 0;
   }
-  &__figure{
+  &__figure {
     margin: 0 11% 48px 8%;
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97.45%;
+  }
+  @media (max-width: $breakpoint-desktop) {
+    &__figure {
+      width: 800px;
+      img {
+        width: 800px;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-small-desktop) {
+    &__figure {
+      width: 600px;
+      img {
+        width: 600px;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-small-tablet) {
+    &__figure {
+      margin: 0 auto;
+      width: 500px;
+      img {
+        width: 500px;
+      }
+    }
+    &__header {
+      font-size: $font-size-header - 4;
+    }
+    &__title {
+      font-size: $font-size-title - 3;
+    }
+  }
+
+  @media (max-width: $breakpoint-large-mobile) {
+    width: 500px;
+    &__figure {
+      margin: 0 auto;
+      width: 400px;
+      img {
+        width: 400px;
+      }
+    }
+    &__header {
+      font-size: $font-size-header - 12;
+    }
+    &__title {
+      font-size: $font-size-title - 6;
+    }
   }
 }

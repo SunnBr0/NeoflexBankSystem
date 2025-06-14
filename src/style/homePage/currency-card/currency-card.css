@@ -14,10 +14,6 @@
   padding: 32px;
   margin-bottom: 48px;
 }
-.currency-card__section {
-  display: flex;
-  flex-direction: column;
-}
 .currency-card__header {
   font-size: 30px;
   margin: 0px;
@@ -96,5 +92,87 @@
 @media (max-width: 1350px) {
   .currency-card {
     width: 92.45%;
+  }
+}
+@media (max-width: 1110px) {
+  .currency-card {
+    width: 91%;
+  }
+  .currency-card__header {
+    font-size: 27px;
+  }
+  .currency-card__aside p {
+    font-size: 13px;
+  }
+  .currency-card__item h3 {
+    font-size: 20px;
+  }
+  .currency-card__item p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .currency-card {
+    width: 82%;
+  }
+  .currency-card__header {
+    font-size: 18px;
+  }
+  .currency-card__aside p {
+    font-size: 9px;
+  }
+  .currency-card__item h3 {
+    font-size: 14px;
+  }
+  .currency-card__item p {
+    font-size: 14px;
+  }
+  .currency-card__list {
+    width: 288px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: 76px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 14px;
+    margin-bottom: 51px;
+  }
+}
+@media (max-width: 650px) {
+  .currency-card {
+    width: 426px;
+    justify-content: space-between;
+  }
+  .currency-card__header {
+    font-size: 16px;
+  }
+  .currency-card__aside p {
+    font-size: 8px;
+  }
+  .currency-card__item h3 {
+    font-size: 11px;
+  }
+  .currency-card__item p {
+    font-size: 11px;
+  }
+  .currency-card__title {
+    font-size: 16px;
+  }
+  .currency-card__subtext {
+    font-size: 15px;
+  }
+  .currency-card__list {
+    width: 248px;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    height: 76px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 14px;
+    margin-bottom: 51px;
   }
 }/*# sourceMappingURL=currency-card.css.map */

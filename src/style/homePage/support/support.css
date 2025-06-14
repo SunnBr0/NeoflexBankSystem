@@ -1,4 +1,6 @@
 .support {
+  width: 1300px;
+  margin: 0 auto;
   font-family: "Ubuntu";
   font-style: normal;
   margin-bottom: 98px;
@@ -90,4 +92,64 @@
 }
 .support__button:active {
   background: #484b99;
+}
+@media (max-width: 1350px) {
+  .support {
+    width: 97.45%;
+  }
+}
+@media (max-width: 768px) {
+  .support__title {
+    font-size: 19px;
+  }
+  .support__header {
+    font-size: 25px;
+  }
+  .support__subtext {
+    font-size: 25px;
+  }
+  .support__input {
+    font-size: 18px;
+  }
+  .support__button {
+    width: 162px;
+    height: 45px;
+  }
+  .support__button-title {
+    font-size: 14px;
+  }
+  .support__article {
+    margin: 0 auto;
+    width: 470px;
+    height: 90px;
+  }
+}
+@media (max-width: 650px) {
+  .support {
+    width: 500px;
+  }
+  .support__title {
+    font-size: 16px;
+  }
+  .support__header {
+    font-size: 22px;
+  }
+  .support__subtext {
+    font-size: 22px;
+  }
+  .support__input {
+    font-size: 13px;
+  }
+  .support__button {
+    width: 240px;
+    height: 45px;
+  }
+  .support__button-title {
+    font-size: 14px;
+  }
+  .support__article {
+    margin: 0 auto;
+    width: 410px;
+    height: 90px;
+  }
 }/*# sourceMappingURL=support.css.map */

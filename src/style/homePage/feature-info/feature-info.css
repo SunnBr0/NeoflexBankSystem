@@ -79,8 +79,8 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 518px;
   }
   .feature-info__img {
     position: relative;
@@ -104,6 +104,7 @@
 @media (max-width: 768px) {
   .feature-info {
     text-align: center;
+    height: 448px;
   }
   .feature-info__img img {
     width: 330px;
@@ -125,6 +126,7 @@
   .feature-info {
     width: 500px;
     text-align: center;
+    height: 328px;
   }
   .feature-info__img img {
     width: 200px;

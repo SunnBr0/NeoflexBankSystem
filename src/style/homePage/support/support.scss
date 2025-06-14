@@ -1,11 +1,24 @@
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
+
+$font-size-header: 30px;
+$font-size-title: 24px;
+$font-size-subtext: 30px;
+$font-size-input: 20px;
+$font-size-button-title: 16px;
 .support {
+  width: 1300px;
+  margin: 0 auto;
   font-family: 'Ubuntu';
   font-style: normal;
   margin-bottom: 98px;
   &__title {
     margin: 0 0 30px 0;
     font-weight: 700;
-    font-size: 24px;
+    font-size: $font-size-title;
     line-height: 35px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -14,7 +27,7 @@
   &__header {
     margin: 0 0 27px 0;
     font-weight: 700;
-    font-size: 30px;
+    font-size: $font-size-header;
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -23,7 +36,7 @@
   &__subtext {
     margin: 0 0 62px 0;
     font-weight: 500;
-    font-size: 30px;
+    font-size: $font-size-subtext;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.02em;
@@ -57,7 +70,7 @@
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: $font-size-input;
     line-height: 29px;
     letter-spacing: 0.02em;
     color: #9092b0;
@@ -82,7 +95,7 @@
       font-family: 'Ubuntu';
       margin: auto 0;
       font-weight: 700;
-      font-size: 16px;
+      font-size: $font-size-button-title;
       color: #ffffff;
     }
   }
@@ -91,5 +104,63 @@
   }
   &__button:active {
     background: #484b99;
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 97.45%;
+  }
+  @media (max-width: $breakpoint-small-tablet) {
+    &__title {
+      font-size: $font-size-title - 5;
+    }
+    &__header {
+      font-size: $font-size-header - 5;
+    }
+    &__subtext {
+      font-size: $font-size-subtext - 5;
+    }
+    &__input {
+      font-size: $font-size-input - 2;
+    }
+
+    &__button {
+      width: 162px;
+      height: 45px;
+      &-title {
+        font-size: $font-size-button-title - 2;
+      }
+    }
+    &__article {
+      margin: 0 auto;
+      width: 470px;
+      height: 90px;
+    }
+  }
+  @media (max-width: $breakpoint-large-mobile) {
+    width: 500px;
+    &__title {
+      font-size: $font-size-title - 8;
+    }
+    &__header {
+      font-size: $font-size-header - 8;
+    }
+    &__subtext {
+      font-size: $font-size-subtext - 8;
+    }
+    &__input {
+      font-size: $font-size-input - 7;
+    }
+
+    &__button {
+      width: 240px;
+      height: 45px;
+      &-title {
+        font-size: $font-size-button-title - 2;
+      }
+    }
+    &__article {
+      margin: 0 auto;
+      width: 410px;
+      height: 90px;
+    }
   }
 }
