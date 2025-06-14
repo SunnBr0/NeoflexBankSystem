@@ -105,8 +105,9 @@ $font-size-title: 16px;
       vertical-align: top;
     }
   }
-  @media (max-width: $breakpoint-large-mobile) {
+  @media (min-width:0px) and (max-width: $breakpoint-large-mobile) {
     height: 100%;
+    min-width: 500px;
     &__section {
       width: 425px;
     }
