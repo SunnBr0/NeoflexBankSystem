@@ -1,13 +1,11 @@
 .feature-info {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 48px auto;
   font-family: "Rubik";
   width: 1300px;
   font-style: normal;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 48px;
-  margin: 0 auto;
 }
 .feature-info__img {
   margin: 0;
@@ -73,7 +71,7 @@
 }
 @media (max-width: 1350px) {
   .feature-info {
-    width: 96%;
+    width: 97.45%;
   }
 }
 @media (max-width: 1220px) {
@@ -81,8 +79,8 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 518px;
   }
   .feature-info__img {
     position: relative;
@@ -106,6 +104,7 @@
 @media (max-width: 768px) {
   .feature-info {
     text-align: center;
+    height: 448px;
   }
   .feature-info__img img {
     width: 330px;
@@ -127,6 +126,7 @@
   .feature-info {
     width: 500px;
     text-align: center;
+    height: 328px;
   }
   .feature-info__img img {
     width: 200px;

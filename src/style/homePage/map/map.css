@@ -1,4 +1,6 @@
 .map {
+  width: 1300px;
+  margin: 0 auto;
   font-family: "Ubuntu";
   font-style: normal;
   font-weight: 500;
@@ -18,4 +20,61 @@
 }
 .map__figure {
   margin: 0 11% 48px 8%;
+}
+@media (max-width: 1350px) {
+  .map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 97.45%;
+  }
+}
+@media (max-width: 1220px) {
+  .map__figure {
+    width: 800px;
+  }
+  .map__figure img {
+    width: 800px;
+  }
+}
+@media (max-width: 1110px) {
+  .map__figure {
+    width: 600px;
+  }
+  .map__figure img {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .map__figure {
+    margin: 0 auto;
+    width: 500px;
+  }
+  .map__figure img {
+    width: 500px;
+  }
+  .map__header {
+    font-size: 26px;
+  }
+  .map__title {
+    font-size: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .map {
+    width: 500px;
+  }
+  .map__figure {
+    margin: 0 auto;
+    width: 400px;
+  }
+  .map__figure img {
+    width: 400px;
+  }
+  .map__header {
+    font-size: 18px;
+  }
+  .map__title {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=map.css.map */

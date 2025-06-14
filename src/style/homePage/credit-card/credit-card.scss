@@ -1,23 +1,15 @@
 @import '../../utility/button-style.scss';
-$breakpoint-large-desktop: 1350px;
-$breakpoint-desktop: 1220px;
-$breakpoint-small-desktop: 1110px;
-$breakpoint-small-tablet: 768px;
-$breakpoint-large-mobile: 650px;
-
+@import '../../utility/size-value.scss';
 $font-size-header: 48px;
 $font-size-button: 16px;
 .credit-card {
   width: 1300px;
-  margin: 0 auto;
+  margin: 0 auto 112px auto;
   display: flex;
   justify-content: space-between;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 700;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 112px;
   &__section {
     height: 226px;
     width: 622px;
@@ -43,7 +35,7 @@ $font-size-button: 16px;
     flex: 1 1 250px;
   }
   @media (max-width: $breakpoint-large-desktop) {
-    width: 96%;
+    width: 97.45%;
   }
   @media (max-width: $breakpoint-desktop) {
     margin-bottom: 198px;
@@ -66,7 +58,6 @@ $font-size-button: 16px;
     align-items: center;
     &__button {
       @include button-styles(16px);
-      // margin-left: 229px;
       margin-left: 37%;
       margin-top: 188px;
     }
@@ -75,8 +66,12 @@ $font-size-button: 16px;
   @media (max-width: $breakpoint-small-desktop) {
     flex-direction: column;
     align-items: center;
+    &__section {
+      height: 146px;
+      width: 612px;
+    }
     &__header {
-      font-size: $font-size-header - 2;
+      font-size: $font-size-header - 3;
       color: #1c1c1e;
       margin-bottom: 36px;
       margin-top: 0px;
@@ -93,9 +88,8 @@ $font-size-button: 16px;
   }
   @media (max-width: $breakpoint-large-mobile) {
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 112px auto;
     width: 500px;
-    margin-bottom: 112px;
     &__section {
       height: 126px;
       width: 500px;
