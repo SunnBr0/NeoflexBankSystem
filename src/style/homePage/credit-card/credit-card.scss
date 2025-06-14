@@ -1,5 +1,5 @@
-@import '../../utility/button-style.scss';
-@import '../../utility/size-value.scss';
+@use '../../utility/size-value.scss' as *;
+@use '../../utility/button-style.scss' as *;
 $font-size-header: 48px;
 $font-size-button: 16px;
 .credit-card {
@@ -40,6 +40,7 @@ $font-size-button: 16px;
   @media (max-width: $breakpoint-desktop) {
     margin-bottom: 198px;
     flex-direction: column;
+    align-items: center;
     &__section {
       height: 146px;
       width: 622px;
@@ -55,7 +56,6 @@ $font-size-button: 16px;
       width: 1050px;
       height: 150px;
     }
-    align-items: center;
     &__button {
       @include button-styles(16px);
       margin-left: 37%;
@@ -90,6 +90,7 @@ $font-size-button: 16px;
     flex-direction: column;
     margin: 0 auto 112px auto;
     width: 500px;
+    align-items: center;
     &__section {
       height: 126px;
       width: 500px;
@@ -98,7 +99,6 @@ $font-size-button: 16px;
       width: 253px;
       height: 652px;
     }
-    align-items: center;
     &__button {
       @include button-styles(16px);
       margin-left: 169px;

@@ -1,10 +1,10 @@
-@import '../../utility/size-value.scss';
-@import '../../utility/button-style.scss';
+@use '../../utility/size-value.scss' as *;
+@use '../../utility/button-style.scss' as *;
 $font-size-logo: 24px;
 $font-size-nav: 16px;
 $font-size-button: 16px;
 .header {
-  width:1300px;
+  width: 1300px;
   font-family: 'Ubuntu';
   font-weight: 700;
   font-size: $font-size-nav;

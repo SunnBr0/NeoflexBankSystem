@@ -1,5 +1,6 @@
-@import '../../utility/button-style.scss';
-@import '../../utility/size-value.scss';
+@use '../../utility/size-value.scss' as *;
+@use '../../utility/button-style.scss' as *;
+
 $font-size-header: 35px;
 $font-size-title: 16px;
 $font-size-text-item: 14px;
@@ -81,6 +82,7 @@ $font-size-text-item: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 518px;
     &__img {
       position: relative;
       bottom: 156px;
@@ -99,11 +101,10 @@ $font-size-text-item: 14px;
     &__header-title {
       font-size: $font-size-title - 2;
     }
-    height: 518px;
   }
   @media (max-width: $breakpoint-small-tablet) {
     text-align: center;
-
+    height: 448px;
     &__img {
       img {
         width: 330px;
@@ -125,12 +126,11 @@ $font-size-text-item: 14px;
     &__list {
       top: 50px;
     }
-    height: 448px;
-
   }
   @media (max-width: $breakpoint-large-mobile) {
     width: 500px;
     text-align: center;
+    height: 328px;
     &__img {
       img {
         width: 200px;
@@ -145,10 +145,10 @@ $font-size-text-item: 14px;
       font-size: $font-size-header - 10;
     }
     &__item {
+      gap: 10px;
       p {
         font-size: $font-size-text-item - 5;
       }
-      gap: 10px
     }
     &__list {
       top: 0px;
@@ -158,6 +158,5 @@ $font-size-text-item: 14px;
         width: 23px;
       }
     }
-    height: 328px;
   }
 }

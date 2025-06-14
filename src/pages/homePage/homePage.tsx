@@ -1,15 +1,15 @@
 import React from 'react';
-import '../../style/homePage/header/header.css';
-import '../../style/homePage/map/map.css';
-import '../../style/homePage/main/main.css';
-import '../../style/homePage/credit-card/credit-card.css';
-import '../../style/homePage/feature-info/feature-info.css';
-
+import '../../style/homePage/header/header.scss';
+import '../../style/homePage/map/map.scss';
+import '../../style/homePage/main/main.scss';
+import '../../style/homePage/credit-card/credit-card.scss';
+import '../../style/homePage/feature-info/feature-info.scss';
 import '../../style/homePage/currency-card/currency-card.scss';
+import '../../style/homePage/support/support.scss';
+import '../../style/homePage/footer/footer.scss';
 import '../../style/utility/size-value.scss';
-
-import '../../style/homePage/support/support.css';
-import '../../style/homePage/footer/footer.css';
+import '../../style/utility/font-family.scss';
+import '../../style/utility/button-style.scss';
 import card1 from '../../assets/credit-card/card1.svg';
 import card2 from '../../assets/credit-card/card2.svg';
 import card3 from '../../assets/credit-card/card3.svg';

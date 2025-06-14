@@ -1,4 +1,4 @@
-@import '../../utility/size-value.scss';
+@use '../../utility/size-value.scss' as *;
 $font-size-header: 30px;
 $font-size-title: 16px;
 .footer {
