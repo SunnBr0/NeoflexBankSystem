@@ -75,6 +75,7 @@ $font-size-text-aside: 16px;
   &__item {
     display: flex;
     height: 22px;
+    width: 110px;
     flex-direction: row;
     list-style-type: none;
     gap: 20px;
@@ -130,6 +131,7 @@ $font-size-text-aside: 16px;
       }
     }
     &__item {
+      width: auto;
       h3 {
         font-size: $font-size-title - 6;
       }
@@ -146,7 +148,7 @@ $font-size-text-aside: 16px;
       flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
-      gap: 14px;
+      gap: 9px;
     }
   }
   @media (max-width: $breakpoint-large-mobile) {
@@ -184,7 +186,7 @@ $font-size-text-aside: 16px;
       flex-direction: row;
       flex-wrap: wrap;
       list-style-type: none;
-      gap: 14px;
+      gap: 12px;
     }
   }
 }

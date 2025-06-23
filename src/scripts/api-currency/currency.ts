@@ -1,2 +1,2 @@
-export const BASE_CURRENCY = "RUB"
-export const TARGET_CURRENCIES = ["USD","EUP","CHF","JPY","TRY","GBP"]
+export const baseCurrency = "RUB"
+export const targetCurrency = ["USD","EUR","CNY","CHF","TRY","JPY"]
