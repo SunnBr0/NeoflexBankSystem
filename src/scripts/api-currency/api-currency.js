@@ -8,8 +8,8 @@ const apiKey = import.meta.env.VITE_API_KEY;
 const minutes = 15 * 60;
 const intervalTime = minutes * 1000;
 
-const fetchCurrency = async (currentCurrency:string) => {
-  const url: string = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currentCurrency}`;
+const fetchCurrency = async (currentCurrency) => {
+  const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currentCurrency}`;
   try {
     const response = await axios.get(url);
     const dataCurrency = {
@@ -23,8 +23,8 @@ const fetchCurrency = async (currentCurrency:string) => {
   }
 };
 
-const updateCurrency = async (targetCurrency: string[]) => {
-  let htmlContent: string = '';
+const updateCurrency = async (targetCurrency) => {
+  let htmlContent = '';
   const dataCurrency = await fetchCurrency(baseCurrency);
   if (dataCurrency) {
     const { conversionRates, timeLastUpdateUtc } = dataCurrency;

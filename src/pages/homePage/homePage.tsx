@@ -21,6 +21,7 @@ import email from '../../assets/support/email.svg';
 import send from '../../assets/support/send.svg';
 import logo from '../../assets/logo.svg';
 import { CurrencyCard } from './components/currency-card';
+import { NewsCards } from './components/news-cards';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -119,6 +120,7 @@ export const HomePage: React.FC = () => {
             <img src={map} alt="" />
           </figure>
         </section>
+        <NewsCards/>
         <section className="support">
           <p className="support__title">Support</p>
           <h2 className="support__header">Subscribe Newsletter & get</h2>
