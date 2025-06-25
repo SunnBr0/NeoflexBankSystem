@@ -16,7 +16,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>
@@ -25,7 +24,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>
@@ -34,7 +32,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>
@@ -43,7 +40,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>
@@ -52,7 +48,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>
@@ -61,7 +56,6 @@ export const NewsCards = () => {
         <article className="card">
           <div className="card__content">
             <figure id="card__img">
-              <img src="" alt="not found" />
             </figure>
             <p className="card__title"></p>
             <p className="card__subtitle"></p>

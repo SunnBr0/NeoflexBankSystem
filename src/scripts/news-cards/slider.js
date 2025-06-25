@@ -4,6 +4,7 @@ setTimeout(() => {
   const nextBtn = document.getElementById("nextBtn");
   const arrCards = document.querySelectorAll(".card");
   const totalCards = arrCards.length;
+
   let currentIndex = 0;
   let touchStartX = 0;
   const containerStyle = getComputedStyle(slider);
@@ -13,7 +14,6 @@ setTimeout(() => {
     const visibleCardsCount = Math.max(1, Math.floor(slider.offsetWidth / totalCardWidth));
     prevBtn.disabled = currentIndex === 0;
     const maxIndex = totalCards - visibleCardsCount;
-    console.log(slider.offsetWidth);
     nextBtn.disabled = currentIndex >= maxIndex;
   }
 
@@ -37,8 +37,6 @@ setTimeout(() => {
     if (currentIndex < totalCards - 1) {
       scrollToCard(currentIndex + 1);
     }
-    console.log("sdasd");
-
   });
 
   slider.addEventListener("touchstart", (e) => {
@@ -57,4 +55,4 @@ setTimeout(() => {
   });
 
   updateButtons();
-}, 1000);
+}, 5000);
