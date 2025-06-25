@@ -1,0 +1,23 @@
+$font-size-header: 30px;
+$font-size-title: 16px;
+.news-cards {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  color: #1c1c1c;
+  width: 1300px;
+  margin:  0 auto;
+  &__header {
+    font-size: $font-size-header;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 8px 0;
+  }
+  &__title {
+    font-size: $font-size-title;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 0 46px 0;
+    color: #2D3748;
+  }
+}
