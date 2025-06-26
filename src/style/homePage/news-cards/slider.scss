@@ -1,3 +1,9 @@
+// @use '../../utility/size-value.scss' as *;
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
 .slider {
   display: flex;
   flex-direction: row;
@@ -46,5 +52,8 @@
       stroke: #ffffff;
       transition: stroke 0.3s ease;
     }
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 92.45%;
   }
 }

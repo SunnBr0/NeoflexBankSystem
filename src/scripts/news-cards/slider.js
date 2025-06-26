@@ -55,4 +55,4 @@ setTimeout(() => {
   });
 
   updateButtons();
-}, 5000);
+}, 4000);

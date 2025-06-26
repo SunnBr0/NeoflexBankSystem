@@ -1,3 +1,10 @@
+// @use '../../utility/size-value.scss' as *;
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
+
 $font-size-header: 30px;
 $font-size-title: 16px;
 .news-cards {
@@ -6,7 +13,7 @@ $font-size-title: 16px;
   font-weight: 500;
   color: #1c1c1c;
   width: 1300px;
-  margin:  0 auto;
+  margin: 0 auto;
   &__header {
     font-size: $font-size-header;
     line-height: 50px;
@@ -18,6 +25,33 @@ $font-size-title: 16px;
     line-height: 50px;
     text-align: center;
     margin: 0 0 46px 0;
-    color: #2D3748;
+    color: #2d3748;
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 92.45%;
+  }
+  @media (max-width: $breakpoint-small-desktop) {
+    &__header {
+      font-size: $font-size-header - 4;
+    }
+    &__title {
+      font-size: $font-size-title - 4;
+    }
+  }
+  @media (max-width: $breakpoint-small-tablet) {
+    &__header {
+      font-size: $font-size-header - 6;
+    }
+    &__title {
+      font-size: $font-size-title - 6;
+    }
+  }
+  @media (max-width: $breakpoint-large-mobile) {
+    &__header {
+      font-size: $font-size-header - 8;
+    }
+    &__title {
+      font-size: $font-size-title - 8;
+    }
   }
 }

@@ -1,3 +1,9 @@
+// @use '../../utility/size-value.scss' as *;
+$breakpoint-large-desktop: 1350px;
+$breakpoint-desktop: 1220px;
+$breakpoint-small-desktop: 1110px;
+$breakpoint-small-tablet: 768px;
+$breakpoint-large-mobile: 650px;
 .container-card {
   padding: 2px;
   width: 1300px;
@@ -9,4 +15,7 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
   margin-bottom: 48px;
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 92.45%;
+  }
 }
