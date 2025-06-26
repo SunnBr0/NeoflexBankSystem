@@ -51,7 +51,7 @@ const updateNewsCard = async (countNewsCard) => {
             <figure id="card__img">
               <img src=${urlToImage} alt="not found" />
             </figure>
-            <a class="card__title" href=${url}>${title}</a>
+            <a class="card__title"  href=${url} target="_blank">${title}</a>
             <p class="card__subtitle">${correntDescription(description)}</p>
           </div>
         </article>`
