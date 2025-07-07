@@ -25,6 +25,7 @@ const getValidNewsCard = async (countNewsCard) => {
   const limitNews = 100
   for (let page = 1; page < limitNews / maxNewsPageSize; page++) {
     const dataNewsCard = await fetchDataFromApi(page)
+    
     if (dataNewsCard.length === 0) break
     if (ArrayValidNewsCard.length >= countNewsCard) break
     const filterDataNewsCard = dataNewsCard.filter((item) => {

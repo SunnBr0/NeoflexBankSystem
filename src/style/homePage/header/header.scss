@@ -1,9 +1,11 @@
-@use '../../utility/size-value.scss' as *;
-@use '../../utility/button-style.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+
 $font-size-logo: 24px;
 $font-size-nav: 16px;
 $font-size-button: 16px;
-.header {
+
+.nav-bar {
   width: 1300px;
   font-family: 'Ubuntu';
   font-weight: 700;
@@ -13,31 +15,30 @@ $font-size-button: 16px;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto 132px auto;
-  &__text {
+  &__header {
     color: #b4387a;
     letter-spacing: 0.02em;
     font-size: $font-size-logo;
   }
-  .nav {
-    &__list {
-      padding: 0px;
-      display: flex;
-      flex-direction: row;
-      gap: 40px;
-      list-style-type: none;
+
+  &__list {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+  }
+  &__text {
+    a {
+      text-decoration: none;
+      color: #1d1929;
     }
-    &__text {
-      a {
-        text-decoration: none;
-        color: #1d1929;
-      }
-      a:hover {
-        text-decoration: none;
-        color: #b2a35f;
-      }
-      a:active {
-        color: #e7d37b;
-      }
+    a:hover {
+      text-decoration: none;
+      color: #b2a35f;
+    }
+    a:active {
+      color: #e7d37b;
     }
   }
   &__button {
@@ -49,21 +50,19 @@ $font-size-button: 16px;
   }
   @media (max-width: $breakpoint-small-tablet) {
     flex-direction: column;
-    &__nav {
+    &__section {
       margin-bottom: 12px;
     }
-    .nav {
-      &__list {
-        padding: 0px;
-        flex-direction: row;
-        justify-content: center;
-      }
-      &__text {
-        color: #1d1929;
-        font-size: $font-size-nav + 10px;
-      }
+    &__list {
+      padding: 0px;
+      flex-direction: row;
+      justify-content: center;
     }
     &__text {
+      color: #1d1929;
+      font-size: $font-size-nav + 10px;
+    }
+    &__header {
       color: #b4387a;
       letter-spacing: 0.02em;
       margin-top: 24px;
@@ -78,21 +77,19 @@ $font-size-button: 16px;
   @media (max-width: $breakpoint-large-mobile) {
     width: 500px;
     flex-direction: column;
-    &__nav {
+    &__section {
       margin-bottom: 12px;
     }
-    .nav {
-      &__list {
-        padding: 0px;
-        flex-direction: row;
-        justify-content: center;
-      }
-      &__text {
-        color: #1d1929;
-        font-size: $font-size-nav + 3px;
-      }
+    &__list {
+      padding: 0px;
+      flex-direction: row;
+      justify-content: center;
     }
     &__text {
+      color: #1d1929;
+      font-size: $font-size-nav + 3px;
+    }
+    &__header {
       color: #b4387a;
       letter-spacing: 0.02em;
       margin-top: 24px;

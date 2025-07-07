@@ -1,4 +1,4 @@
-import axios from 'axios';
+  import axios from 'axios';
 import { baseCurrency } from './currency';
 import { targetCurrency } from './currency';
 
@@ -9,13 +9,16 @@ const minutes = 15 * 60;
 const intervalTime = minutes * 1000;
 
 const fetchCurrency = async (currentCurrency) => {
-  const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currentCurrency}`;
+  // const url = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/${currentCurrency}`;
   try {
     const response = await axios.get(url);
     const dataCurrency = {
       conversionRates: response.data.conversion_rates,
       timeLastUpdateUtc: response.data.time_last_update_utc,
     };
+    console.log(response);
+    console.log(dataCurrency);
+    
     return dataCurrency;
   } catch (error) {
     console.error('Error loading currency:', error);

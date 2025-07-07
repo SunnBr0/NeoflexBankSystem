@@ -1,0 +1,21 @@
+import { words } from '../../../../lang/lang';
+
+export const NavigateBar = () => {
+  return (
+    <>
+      <p className="nav-bar__header">{words.homePage.navigation.UK.logo}</p>
+      <nav className="nav-bar__section">
+        <ul className="nav-bar__list">
+          {words.homePage.navigation.UK.siteSections.map((item, index) => (
+            <li key={`${item}-${index}`} className="nav-bar__text">
+              <a href="">{item}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <button className="nav-bar__button">
+        {words.homePage.navigation.UK.button}
+      </button>
+    </>
+  );
+};
