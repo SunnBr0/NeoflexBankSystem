@@ -3,27 +3,56 @@ import '../../../../style/homePage/newsCards/containerCard.scss';
 import '../../../../style/homePage/newsCards/slider.scss';
 import '../../../../style/homePage/newsCards/newsCards.scss';
 import { words } from '../../../../lang/lang';
+import { useRef } from 'react';
+import { useCardSlider } from '../../hooks/useCardSlider';
+import { useSelector } from 'react-redux';
+import type { RootState } from '../../../../store/store';
 
 export const NewsCards = () => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const prevBtnRef = useRef<HTMLButtonElement>(null);
+  const nextBtnRef = useRef<HTMLButtonElement>(null);
+  const news = useSelector((state: RootState) => state.news.articles);
+
+  useCardSlider({
+    sliderRef,
+    prevBtnRef,
+    nextBtnRef,
+    arrCardsClassName: '.card',
+    cardsCount: news.length,
+  });
+
+  if (!news || news.length === 0) {
+    return <p>Loading news...</p>;
+  }
   return (
     <section className="news-cards">
       <h2 className="news-cards__header">
         {words.homePage.newsCards.UK.header}
       </h2>
       <p className="news-cards__title">{words.homePage.newsCards.UK.title}</p>
-      <section className="container-card">
-        {Array.from({ length: 4 }).map((item, index) => (
-          <article key={`${item}-${index}`} className="card">
+      <section className="container-card" ref={sliderRef}>
+        {news.map(({ description, title, url, urlToImage }, index) => (
+          <article key={`${urlToImage}-${index}`} className="card">
             <div className="card__content">
-              <figure id="card__img"></figure>
-              <p className="card__title"></p>
-              <p className="card__subtitle"></p>
+              <figure id="card__img">
+                <img src={urlToImage} alt="not found" />
+              </figure>
+              <a className="card__title" href={url} target="_blank">
+                ${title}
+              </a>
+              <p className="card__subtitle">{description}</p>
             </div>
           </article>
         ))}
       </section>
       <section className="slider" id="slider">
-        <button className="slider__button" id="prevBtn" disabled>
+        <button
+          className="slider__button"
+          id="prevBtn"
+          ref={prevBtnRef}
+          disabled
+        >
           <figure className="slider__figure">
             <svg
               stroke="#222222"
@@ -37,7 +66,7 @@ export const NewsCards = () => {
             </svg>
           </figure>
         </button>
-        <button className="slider__button" id="nextBtn">
+        <button className="slider__button" id="nextBtn" ref={nextBtnRef}>
           <figure className="slider__figure">
             <svg
               stroke="white"

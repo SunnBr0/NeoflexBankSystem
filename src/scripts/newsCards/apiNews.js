@@ -8,7 +8,7 @@ const maxNewsPageSize = 25
 const fetchDataFromApi = async (currnetPage) => {
   try {
     const response = await axios.get(
-      `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${apiKey}&page=${currnetPage}&pageSize=${maxNewsPageSize}`
+      // `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${apiKey}&page=${currnetPage}&pageSize=${maxNewsPageSize}`
     );
     return response.data.articles || [];
   } catch (error) {

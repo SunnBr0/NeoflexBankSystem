@@ -4,7 +4,6 @@ setTimeout(() => {
   const nextBtn = document.getElementById("nextBtn");
   const arrCards = document.querySelectorAll(".card");
   const totalCards = arrCards.length;
-
   let currentIndex = 0;
   let touchStartX = 0;
   const containerStyle = getComputedStyle(slider);
@@ -25,24 +24,20 @@ setTimeout(() => {
     currentIndex = index;
     updateButtons();
   }
-
   prevBtn.addEventListener("click", () => {
     if (currentIndex > 0) {
       scrollToCard(currentIndex - 1);
     }
 
   });
-
   nextBtn.addEventListener("click", () => {
     if (currentIndex < totalCards - 1) {
       scrollToCard(currentIndex + 1);
     }
   });
-
   slider.addEventListener("touchstart", (e) => {
     touchStartX = e.touches[0].clientX;
   });
-
   slider.addEventListener("touchend", (e) => {
     const touchEndX = e.changedTouches[0].clientX;
     const diffValue = touchStartX - touchEndX;
@@ -53,6 +48,5 @@ setTimeout(() => {
       scrollToCard(currentIndex - 1);
     }
   });
-
   updateButtons();
 }, 4000);

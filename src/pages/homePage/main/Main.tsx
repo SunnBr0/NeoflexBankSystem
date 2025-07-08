@@ -6,6 +6,7 @@ import { NewsCards } from './components/NewsCards';
 import { Support } from './components/Support';
 
 export const Main = () => {
+  
   return (
     <main>
       <CreditCard />
