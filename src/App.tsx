@@ -8,6 +8,19 @@ import {
 import { useDispatch } from 'react-redux';
 import { setDataCurrency } from './store/currency/currencySlice';
 import { setNewsData } from './store/news/newsSlice';
+import { LoanPage } from './pages/loanPage/LoanPage';
+import './style/homePage/header/header.scss';
+import './style/homePage/map/map.scss';
+import './style/homePage/main/main.scss';
+import './style/homePage/creditCard/creditCard.scss';
+import './style/homePage/featureInfo/featureInfo.scss';
+import './style/homePage/currencyCard/currencyCard.scss';
+import './style/homePage/support/support.scss';
+import './style/homePage/footer/footer.scss';
+import './style/utility/sizeValue.scss';
+import './style/utility/fontFamily.scss';
+import './style/utility/buttonStyle.scss';
+import './style/loanPage/digitalCreditCard/digitalCreditCard.scss';
 export const App = () => {
   const dispatch = useDispatch();
 
@@ -30,7 +43,6 @@ export const App = () => {
     const intervalCurrency = setInterval(() => {
       fetchValidDataCurrency();
     }, intervalTime);
-
     return () => clearInterval(intervalCurrency);
   }, []);
 
@@ -41,6 +53,7 @@ export const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/loan" element={<LoanPage />} />
       </Routes>
     </Router>
   );

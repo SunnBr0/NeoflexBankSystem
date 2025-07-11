@@ -4,7 +4,7 @@ $font-size-header: 48px;
 $font-size-button: 16px;
 .credit-card {
   width: 1300px;
-  margin: 0 auto 112px auto;
+  margin: 132px auto 112px auto;
   display: flex;
   justify-content: space-between;
   font-family: 'Ubuntu';
@@ -29,6 +29,12 @@ $font-size-button: 16px;
     gap: 14px;
     width: 520px;
     height: 315px;
+    figure{
+      img{
+        width: 250px;
+        height: 148px;
+      }
+    }
   }
   &__item {
     margin: 0px;

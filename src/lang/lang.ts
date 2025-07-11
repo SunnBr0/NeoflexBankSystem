@@ -3,7 +3,12 @@ export const words = {
     navigation: {
       UK: {
         logo: 'NeoBank',
-        siteSections: ['Credit card', 'Product', 'Account', 'Resources'],
+        siteSections: {
+          'Credit card':"loan",
+          'Product':"/",
+          'Account':"/",
+          'Resources':"/",
+        },
         button: 'Online Bank',
       },
     },
@@ -77,4 +82,18 @@ export const words = {
       },
     },
   },
+  loanPage :{
+    digitalCreditCard:{
+      UK:{
+        header:"Platinum digital credit card",
+        title:"Our best credit card. Suitable for everyday spending and shopping. Cash withdrawals and transfers without commission and interest.",
+        advantages:{
+          "Up to 160 days":"No percent",
+          "Up to 600 000 ₽":"Credit limit",
+          "0 ₽":"Card service is free",
+        },
+        button:"Apply for card"
+      }
+    }
+  }
 };

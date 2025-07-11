@@ -1,0 +1,179 @@
+@use '../../index.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+
+.digital-credit-card {
+  width: $digital-credit-card-width;
+  height: $digital-credit-card-height;
+  margin: 20px auto 48px auto;
+  background: linear-gradient(
+    180.8deg,
+    rgba(203, 213, 224, 0.624) 34.33%,
+    rgba(254, 235, 200, 0.56) 64.27%
+  );
+  box-shadow:
+    0px 0px 8px rgba(0, 0, 0, 0.08),
+    0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 28.8px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 48px 117px 48px 32px;
+  justify-content: space-between;
+  &__container {
+    width: $digital-credit-card-container;
+  }
+  &__button {
+    @include button-styles(8px);
+  }
+  &__header {
+    line-height: 48px;
+    margin: 0 0 48px 0;
+    @include font-style-text(
+      $digital-credit-card-header-font-size,
+      $digital-credit-card-header-font-weight
+    );
+  }
+  &__title {
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin: 0 0 32px 0;
+    width: 515px;
+    @include font-style-text(
+      $digital-credit-card-title-font-size,
+      $digital-credit-card-title-font-weight,
+      $digital-credit-card-title-color
+    );
+  }
+  &__advantage-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 32px 0;
+    gap: 80px;
+  }
+  &__advantage-text {
+    h2 {
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      margin: 0 0 9px 0;
+      @include font-style-text(
+        $digital-credit-card-advantage-header-font-size,
+        $digital-credit-card-header-font-weight,
+        $digital-credit-card-advantage-color
+      );
+    }
+    p {
+      line-height: 18px;
+      letter-spacing: 0.02em;
+      margin: 0;
+      @include font-style-text(
+        $digital-credit-card-advantage-title-font-size,
+        $digital-credit-card-title-font-weight,
+        $digital-credit-card-advantage-color
+      );
+    }
+  }
+  &__advantage-text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    img {
+      width: $digital-credit-card-img-width;
+      height: $digital-credit-card-img-height;
+    }
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    width: 97.45%;
+    justify-content: space-between;
+    &__header {
+      font-size: $digital-credit-card-header-font-size - 10px;
+    }
+    &__title {
+      font-size: $digital-credit-card-title-font-size - 2px;
+      width: 100%;
+    }
+
+    &__advantage-container {
+      gap: 30px;
+    }
+    &__advantage-text {
+      h2 {
+        font-size: $digital-credit-card-advantage-header-font-size - 4px;
+      }
+      p {
+        font-size: $digital-credit-card-advantage-title-font-size - 4px;
+      }
+    }
+  }
+
+  @media (max-width: $breakpoint-small-desktop) {
+    padding-right: 30px;
+    &__figure {
+      img {
+        width: $digital-credit-card-img-width - 70px;
+        height: $digital-credit-card-img-height - 70px;
+      }
+    }
+    &__header {
+      font-size: $digital-credit-card-header-font-size - 20px;
+    }
+    &__title {
+      font-size: $digital-credit-card-title-font-size - 4px;
+    }
+    &__advantage-text {
+      h2 {
+        font-size: $digital-credit-card-advantage-header-font-size - 7px;
+      }
+      p {
+        font-size: $digital-credit-card-advantage-title-font-size - 7px;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-large-desktop) {
+    &__header {
+      font-size: $digital-credit-card-header-font-size - 30px;
+    }
+    &__title {
+      font-size: $digital-credit-card-title-font-size - 9px;
+    }
+    &__advantage-text {
+      h2 {
+        font-size: $digital-credit-card-advantage-header-font-size - 7px;
+      }
+      p {
+        font-size: $digital-credit-card-advantage-title-font-size - 7px;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-large-mobile) {
+    &__header {
+      font-size: $digital-credit-card-header-font-size - 30px;
+      line-height: 22px;
+      // margin: 0 0 32px 0;
+    }
+    &__title {
+      font-size: $digital-credit-card-title-font-size - 9px;
+    }
+    &__advantage-text {
+      h2 {
+        font-size: $digital-credit-card-advantage-header-font-size - 10px;
+      }
+      p {
+        font-size: $digital-credit-card-advantage-title-font-size - 9px;
+      }
+    }
+    &__figure {
+      img {
+        width: $digital-credit-card-img-width - 111px;
+        height: $digital-credit-card-img-height - 80px;
+      }
+    }
+     &__advantage-container {
+      gap: 10px;
+    }
+  }
+}

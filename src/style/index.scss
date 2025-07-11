@@ -1,0 +1,26 @@
+$digital-credit-card-img-width: 380px;
+$digital-credit-card-img-height: 226px;
+$digital-credit-card-width: 1300px;
+$digital-credit-card-height: 390px;
+$digital-credit-card-header-font-size: 48px;
+$digital-credit-card-header-font-weight: 700;
+$digital-credit-card-title-font-size: 16px;
+$digital-credit-card-title-font-weight: 500;
+$digital-credit-card-title-color: #2d3748;
+$digital-credit-card-container: 649px;
+$digital-credit-card-advantage-header-font-size: 20px;
+$digital-credit-card-advantage-title-font-size: 16px;
+$digital-credit-card-advantage-color: #3d3d3d;
+
+@mixin font-style-text(
+  $font-size,
+  $font-weight,
+  $color: #ffffff,
+  $font-family: 'Ubuntu'
+) {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+}

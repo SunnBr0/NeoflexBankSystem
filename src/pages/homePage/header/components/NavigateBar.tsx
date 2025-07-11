@@ -6,11 +6,13 @@ export const NavigateBar = () => {
       <p className="nav-bar__header">{words.homePage.navigation.UK.logo}</p>
       <nav className="nav-bar__section">
         <ul className="nav-bar__list">
-          {words.homePage.navigation.UK.siteSections.map((item, index) => (
-            <li key={`${item}-${index}`} className="nav-bar__text">
-              <a href="">{item}</a>
-            </li>
-          ))}
+          {Object.entries(words.homePage.navigation.UK.siteSections).map(
+            ([key, url],index) => (
+              <li key={`${key}-${index}`} className="nav-bar__text">
+                <a href={url}>{key}</a>
+              </li>
+            )
+          )}
         </ul>
       </nav>
       <button className="nav-bar__button">
