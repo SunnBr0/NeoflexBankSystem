@@ -1,0 +1,43 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+
+.credit-cards-cashback {
+  width: $main-width;
+  margin: 32px auto 48px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 40px;
+
+  &__item {
+    box-sizing: border-box;
+    padding: 32px;
+    width: 406px;
+    height: 163px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #eaecee;
+    box-shadow:
+      0px 0px 8px rgba(0, 0, 0, 0.08),
+      0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    &:nth-child(even) {
+      background: rgba(136, 179, 184, 0.6);
+      box-shadow:
+        0px 0px 8px rgba(0, 0, 0, 0.08),
+        0px 2px 4px rgba(0, 0, 0, 0.2);
+      border-radius: 28px;
+    }
+    h2 {
+      margin: 0;
+      line-height: 53px;
+      @include font-style-text(36px, 700, #000000);
+    }
+    p {
+      margin: 0 ;
+      line-height: 24px;
+      @include font-style-text(16px, 500, rgba(67, 67, 67, 0.9));
+    }
+  }
+}

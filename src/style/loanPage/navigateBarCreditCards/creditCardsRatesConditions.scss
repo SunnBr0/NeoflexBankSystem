@@ -1,0 +1,39 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+.credit-cards-rates-conditions {
+  &__list {
+    width: 1016px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 40px 0 47px 0;
+    gap: 24px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: row;
+    height: 42px;
+    border-bottom: 1px solid #7f92ac;
+    h2 {
+      margin: 0;
+      width: 325px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      @include font-style-text(16px, 500, #000000);
+    }
+    p {
+      margin: 0;
+      width: 640px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      @include font-style-text(16px, 500, #434343);
+    }
+    &:last-child {
+      p {
+        line-height: 19px;
+      }
+      border-bottom: none;
+    }
+  }
+}

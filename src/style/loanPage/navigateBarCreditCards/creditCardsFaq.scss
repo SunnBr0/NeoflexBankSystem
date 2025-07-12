@@ -1,0 +1,47 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+
+.credit-cards-faq {
+  width: $main-width;
+  margin: 0 auto 48px auto;
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    padding: 0 32px 0 32px;
+    border-top: 1px solid #e2e8f0;
+    border-left: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    box-sizing: border-box;
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 84px;
+      h2 {
+        margin: 0;
+        line-height: 24px;
+        @include font-style-text(16px, 500, #1c1c1e);
+      }
+    }
+    &:last-child {
+      border-bottom: 1px solid #e2e8f0;
+    }
+  }
+  &__content {
+    p {
+      margin: 0 0 24px 0;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      @include font-style-text(16px, 400, #7b7454);
+    }
+  }
+  &__figure {
+    margin: 0;
+  }
+  &__header {
+    line-height: 44px;
+    margin: 32px 0;
+    @include font-style-text(30px, 700, #000000);
+  }
+}

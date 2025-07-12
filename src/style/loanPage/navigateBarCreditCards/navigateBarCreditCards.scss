@@ -1,0 +1,58 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+
+.nav-bar-credit-cards {
+  width: $main-width;
+  margin: 0 auto;
+
+  &__list {
+    position: relative;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-bottom: 2px solid #dedde6;
+  }
+
+  &__item {
+    position: relative;
+    padding: 0 14px 10px 16px;
+
+    a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      transition: color 0.3s ease;
+      @include font-style-text(16px, 500, #7b7454);
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: -16px;
+        bottom: -14px;
+        width: calc(100% + 32px);
+        height: 2px;
+        background-color: #7b7454;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease;
+        z-index: 2;
+      }
+
+      &:hover,
+      &:focus {
+        color: #4e472d;
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.credit-cards-information {
+  width: $main-width;
+  margin: 0px auto;
+}

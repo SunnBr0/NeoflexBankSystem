@@ -21,6 +21,11 @@ import './style/utility/sizeValue.scss';
 import './style/utility/fontFamily.scss';
 import './style/utility/buttonStyle.scss';
 import './style/loanPage/digitalCreditCard/digitalCreditCard.scss';
+import './style/loanPage/navigateBarCreditCards/navigateBarCreditCards.scss';
+import './style/loanPage/navigateBarCreditCards/creditCardsAbout.scss';
+import './style/loanPage/navigateBarCreditCards/creditCardsRatesConditions.scss';
+import './style/loanPage/navigateBarCreditCards/creditCardsCashback.scss';
+import './style/loanPage/navigateBarCreditCards/creditCardsFaq.scss';
 export const App = () => {
   const dispatch = useDispatch();
 

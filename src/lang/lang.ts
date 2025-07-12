@@ -4,10 +4,10 @@ export const words = {
       UK: {
         logo: 'NeoBank',
         siteSections: {
-          'Credit card':"loan",
-          'Product':"/",
-          'Account':"/",
-          'Resources':"/",
+          'Credit card': 'loan',
+          Product: '/',
+          Account: '/',
+          Resources: '/',
         },
         button: 'Online Bank',
       },
@@ -82,18 +82,100 @@ export const words = {
       },
     },
   },
-  loanPage :{
-    digitalCreditCard:{
-      UK:{
-        header:"Platinum digital credit card",
-        title:"Our best credit card. Suitable for everyday spending and shopping. Cash withdrawals and transfers without commission and interest.",
-        advantages:{
-          "Up to 160 days":"No percent",
-          "Up to 600 000 ₽":"Credit limit",
-          "0 ₽":"Card service is free",
+  loanPage: {
+    digitalCreditCard: {
+      UK: {
+        header: 'Platinum digital credit card',
+        title:
+          'Our best credit card. Suitable for everyday spending and shopping. Cash withdrawals and transfers without commission and interest.',
+        advantages: {
+          'Up to 160 days': 'No percent',
+          'Up to 600 000 ₽': 'Credit limit',
+          '0 ₽': 'Card service is free',
         },
-        button:"Apply for card"
-      }
-    }
-  }
+        button: 'Apply for card',
+      },
+    },
+    navigateBarCreditCards: {
+      UK: {
+        navigation: ['About card', 'Rates and conditions', 'Cashback', 'FAQ'],
+        aboutCard: {
+          translations: {
+            header: 'Up to 50 000 ₽',
+            title: 'Cash and transfers without commission and percent',
+          },
+          percentLoan: {
+            header: 'Up to 160 days',
+            title: 'Without percent on the loan',
+          },
+          convenience: {
+            header: 'Free delivery',
+            title:
+              'We will deliver your card by courier at a convenient place and time for you',
+          },
+          purchases: {
+            header: 'Up to 12 months',
+            title:
+              'No percent. For equipment, clothes and other purchases in installments',
+          },
+          replenishment: {
+            header: 'Convenient deposit and withdrawal',
+            title:
+              'At any ATM. Top up your credit card for free with cash or transfer from other cards',
+          },
+        },
+        ratesConditions: {
+          'Card currency': 'Rubles, dollars, euro',
+          'Interest free period': '0% up to 160 days',
+          'Payment system': 'Mastercard, Visa',
+          'Maximum credit limit on the card': '600 000 ₽',
+          'Replenishment and withdrawal':
+            'At any ATM. Top up your credit card for free with cash or transfer from other cards',
+          'Max cashback per month': '15 000 ₽',
+          'Transaction Alert': [
+            '60 ₽ — SMS or push notifications',
+            '0 ₽ — card statement, information about transactions in the online bank',
+          ],
+        },
+        cashback: {
+          'For food delivery, cafes and restaurants': '5%',
+          'In supermarkets with our subscription': '5%',
+          "In clothing stores and children's goods": '2%',
+          'Other purchases and payment of services and fines': '1%',
+          'Shopping in online stores': 'up to 3%',
+          'Purchases from our partners': '30%',
+        },
+        faq: {
+          issuing: {
+            header: 'Issuing and receiving a card',
+            accordion: {
+              'How to get a card?':
+                'We will deliver your card by courier free of charge. Delivery in Moscow and St. Petersburg - 1-2 working days. For other regions of the Russian Federation - 2-5 working days.',
+              'What documents are needed and how old should one be to get a card?':
+                'Need a passport. You must be between 20 and 70 years old.',
+              'In what currency can I issue a card?':
+                'In rubles, dollars or euro',
+              'How much income do I need to get a credit card?':
+                'To obtain a credit card, you will need an income of at least 25,000 rubles per month after taxes.',
+              "How do I find out about the bank's decision on my application?":
+                'After registration, you will receive an e-mail with a decision on your application.',
+            },
+          },
+          usage: {
+            header: 'Using a credit card',
+            accordion: {
+              'What is an interest free credit card?':
+                'A credit card with a grace period is a bank card with an established credit limit, designed for payment, reservation of goods and services, as well as for receiving cash, which allows you to use credit funds free of charge for a certain period.',
+              'How to activate a credit card':
+                'You can activate your credit card and generate a PIN code immediately after receiving the card at a bank branch using a PIN pad.',
+              'What is a settlement date?':
+                'The settlement date is the date from which you can pay off the debt for the reporting period. The settlement date falls on the first calendar day following the last day of the reporting period. The first settlement date is reported by the bank when transferring the issued credit card to the client, and then in the monthly account statement.',
+              'What do I need to know about interest rates?':
+                'For each reporting period from the 7th day of the previous month to the 6th day of the current month inclusive, a statement is generated for the credit card. The statement contains information on the amount and timing of the minimum payment, as well as the total amount of debt as of the date of issue.',
+            },
+          },
+        },
+      },
+    },
+  },
 };

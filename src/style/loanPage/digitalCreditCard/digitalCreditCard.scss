@@ -3,8 +3,8 @@
 @use '../../utility/sizeValue.scss' as *;
 
 .digital-credit-card {
-  width: $digital-credit-card-width;
   height: $digital-credit-card-height;
+  width: $main-width;
   margin: 20px auto 48px auto;
   background: linear-gradient(
     180.8deg,
