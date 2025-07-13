@@ -1,0 +1,67 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+
+.information-get-card {
+  display: flex;
+  flex-direction: column;
+  width: $main-width;
+  margin: 49px auto 96px auto;
+  align-items: center;
+  &__header {
+    margin: 0 0 14px 0;
+    line-height: 44px;
+    text-align: center;
+    @include font-style-text(30px, 700, #000000);
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    &__title {
+      line-height: 24px;
+      text-align: center;
+      margin: 20px 13px 0 14px;
+      @include font-style-text(16px, 500, #000000);
+    }
+  }
+
+  &__figures {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 36px;
+    &__cicle {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      img {
+        align-items: center;
+      }
+    }
+
+    &__line {
+      flex-grow: 1;
+      height: 2px;
+      background-color: #ccc;
+    }
+    &__number {
+      position: absolute;
+      left: 18px;
+      line-height: 29px;
+      margin: 0;
+      @include font-style-text(20px, 700, #000000);
+    }
+  }
+}
+.information-get-card__item:nth-child(2) .information-get-card__item__title {
+  margin: 20px 17px 0 24px;
+}
+.information-get-card__item:nth-child(3) .information-get-card__item__title {
+  margin: 20px 0 0 14px;
+}

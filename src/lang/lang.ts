@@ -177,5 +177,15 @@ export const words = {
         },
       },
     },
+    informationGetCard: {
+      UK: {
+        header: 'How to get a card',
+        title: [
+          'Fill out an online application - you do not need to visit the bank',
+          "Find out the bank's decision immediately after filling out the application",
+          'The bank will deliver the card free of charge, wherever convenient, to your city',
+        ],
+      },
+    },
   },
 };
