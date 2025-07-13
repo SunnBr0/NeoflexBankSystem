@@ -187,5 +187,24 @@ export const words = {
         ],
       },
     },
+    processGetCreditCard: {
+      UK: {
+        cardFields: {
+          request: 'Requested amount:',
+          total: 'Total amount:',
+          months: ['For', 'months'],
+          payment: 'Monthly payment:',
+          rate: 'Your rate:',
+          insurance: 'Insurance included',
+          salary: 'Salary client',
+        },
+        button: 'Select',
+        decisionEmail: {
+          header: 'The preliminary decision has been sent to your email.',
+          title:
+            'In the letter you can get acquainted with the preliminary decision on the credit card.',
+        },
+      },
+    },
   },
 };

@@ -9,7 +9,10 @@ export const InformationGetCard = () => {
       </h2>
       <section className="information-get-card__section">
         {words.loanPage.informationGetCard.UK.title.map((title, index) => (
-          <article className="information-get-card__item">
+          <article
+            key={`${title}-${index}`}
+            className="information-get-card__item"
+          >
             <div className="information-get-card__figures">
               <p className="information-get-card__figures__number">
                 {index + 1}

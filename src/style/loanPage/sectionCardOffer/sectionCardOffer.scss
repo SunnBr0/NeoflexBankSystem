@@ -1,0 +1,53 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+
+.credit-card-offer {
+  width: $main-width;
+  margin: 0 auto 96px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 295px;
+    height: 602px;
+    background: #ffffff;
+    box-shadow:
+      0px 0px 8px rgba(0, 0, 0, 0.08),
+      0px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 28px;
+    gap: 14px;
+  }
+  &__figure {
+    margin: 0;
+    display: flex;
+    img {
+      align-items: center;
+    }
+  }
+  &__figure-icon {
+    margin: 0;
+    margin: 32px auto;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  &__title {
+    margin: 0;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    @include font-style-text(16px, 500, #1c1c1e);
+  }
+  &__button {
+    width: 148px;
+    margin: 50px auto 32px auto;
+    @include button-styles(8px);
+  }
+}
