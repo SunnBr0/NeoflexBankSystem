@@ -2,7 +2,7 @@ import offer from '../../../../assets/cardOffer/offer.svg';
 import checkFill from '../../../../assets/cardOffer/checkFill.svg';
 import closeRoundFill from '../../../../assets/cardOffer/closeRoundFill.svg';
 import { words } from '../../../../lang/lang';
-
+import { stringValidSum } from '../../../../scripts/utils/utils';
 type TCardOffer = {
   requestSum: number;
   totalSum: number;
@@ -21,10 +21,7 @@ export const CardOffer = ({
   insurance,
   salaryClient,
 }: TCardOffer) => {
-  const stringValidSum = (requestSum: number) => {
-    const resultNumber = new Intl.NumberFormat('ru-RU').format(requestSum);
-    return `${resultNumber} ₽`;
-  };
+ 
   return (
     <article className="credit-card-offer__item">
       <figure className="credit-card-offer__figure-icon">

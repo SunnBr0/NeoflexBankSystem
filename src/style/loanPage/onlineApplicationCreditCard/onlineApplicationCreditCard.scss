@@ -1,0 +1,66 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+
+.credit-card-online-app {
+  width: $main-width;
+  margin: 0 auto 96px auto;
+  height: 584px;
+  background: #ffffff;
+  box-shadow:
+    0px 0px 8px rgba(0, 0, 0, 0.08),
+    0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  box-sizing: border-box;
+  padding: 32px;
+  &__container-up-half {
+    display: flex;
+    flex-direction: row;
+  }
+  &__container-left-part {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    border-right: 1px dashed rgba(128, 128, 128, 0.4);
+  }
+  &__container-right-part {
+    display: flex;
+    flex-direction: column;
+    margin-left: 42px;
+    h2 {
+      margin: 0 0 16px 0;
+
+      line-height: 20px;
+      @include font-style-text(20px, 700, #000000);
+    }
+    input {
+      border: none;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+      width: 220px;
+      padding-bottom: 10px;
+      @include font-style-text(16px, 500, #000000);
+      outline: none;
+
+      &::placeholder {
+        @include font-style-text(16px, 500, #786d6d);
+      }
+    }
+  }
+  &__container-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 32px;
+    justify-content: space-between;
+    h2 {
+      margin: 0;
+      line-height: 30px;
+      @include font-style-text(30px, 700, #000000);
+    }
+    p {
+      margin: 0;
+      line-height: 16px;
+      @include font-style-text(16px, 500, #000000);
+    }
+  }
+}

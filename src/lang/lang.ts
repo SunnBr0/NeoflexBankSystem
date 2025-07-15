@@ -204,6 +204,52 @@ export const words = {
           title:
             'In the letter you can get acquainted with the preliminary decision on the credit card.',
         },
+        onlineApplicationCreditCard: {
+          header: 'Customize your card',
+          headerStep: 'Step 1 of 5',
+          headerSlider: 'Select amount',
+          headerInput: 'You have chosen the amount',
+          fillingFields: {
+            lastName: {
+              header: 'Your last name',
+              placeHolder: 'For Example Doe',
+              error: 'Enter your last name',
+            },
+            firstName: {
+              header: 'Your first name',
+              placeHolder: 'For Example Jhon',
+              error: 'Enter your first name',
+            },
+            patronymic: {
+              header: 'Your first name',
+              placeHolder: 'For Example Victorovich',
+            },
+            select: {
+              header: 'Select term',
+            },
+            email: {
+              header: 'Your email',
+              placeHolder: 'test@gmail.com',
+              error: 'Incorrect email address',
+            },
+            dateBirth: {
+              header: 'Your date of birth',
+              placeHolder: 'Select Date and Time',
+              error: 'Incorrect date of birth',
+            },
+            passportSeries: {
+              header: 'Your passport series',
+              placeHolder: '0000',
+              error: 'The series must be 4 digits',
+            },
+            passportNumber: {
+              header: 'Your passport number',
+              placeHolder: '000000',
+              error: 'The series must be 6 digits',
+            },
+          },
+          button:"Continue"
+        },
       },
     },
   },

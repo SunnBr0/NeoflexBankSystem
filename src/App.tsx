@@ -29,6 +29,8 @@ import './style/loanPage/navigateBarCreditCards/creditCardsFaq.scss';
 import './style/loanPage/informationGetCard/informationGetCard.scss';
 import './style/loanPage/sectionCardOffer/sectionCardOffer.scss';
 import './style/loanPage/decisionEmail/decisionEmail.scss';
+import './style/loanPage/onlineApplicationCreditCard/onlineApplicationCreditCard.scss';
+import './style/loanPage/sliderAmount/sliderAmount.scss';
 export const App = () => {
   const dispatch = useDispatch();
 
