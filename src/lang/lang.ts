@@ -209,6 +209,7 @@ export const words = {
           headerStep: 'Step 1 of 5',
           headerSlider: 'Select amount',
           headerInput: 'You have chosen the amount',
+          headerSectionsInput: 'Contact Information',
           fillingFields: {
             lastName: {
               header: 'Your last name',
@@ -221,11 +222,12 @@ export const words = {
               error: 'Enter your first name',
             },
             patronymic: {
-              header: 'Your first name',
+              header: 'Your patronymic',
               placeHolder: 'For Example Victorovich',
             },
             select: {
               header: 'Select term',
+              placeHolder: 'Select term',
             },
             email: {
               header: 'Your email',
@@ -248,7 +250,7 @@ export const words = {
               error: 'The series must be 6 digits',
             },
           },
-          button:"Continue"
+          button: 'Continue',
         },
       },
     },

@@ -13,6 +13,20 @@
   border-radius: 28px;
   box-sizing: border-box;
   padding: 32px;
+  &__container-down-half {
+    &__fields {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    &__button {
+      @include button-styles(8px);
+      padding: 16px 38px;
+      float: right;
+    }
+  }
   &__container-up-half {
     display: flex;
     flex-direction: row;

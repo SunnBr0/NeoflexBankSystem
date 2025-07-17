@@ -1,0 +1,52 @@
+@use '../../index.scss' as *;
+@use '../../utility/sizeValue.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+
+.filling-field {
+  //   display: flex;
+  //   flex-direction: column;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    line-height: 16px;
+    margin-bottom: 8px;
+    gap: 5px;
+    @include font-style-text(16px, 500, #1a202c);
+  }
+  &__star {
+    // width: 8px;
+    // height: 16px;
+    line-height: 16px;
+    color: #ff0000;
+    @include font-style-text(16px, 500, #ff0000);
+  }
+  &__input {
+    box-sizing: border-box;
+    padding: 13px 13px 13px 16px;
+    width: 297px;
+    height: 40px;
+    background: #f9f5e3;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 6px;
+    line-height: 14px;
+    @include font-style-text(14px, 400, #000000);
+    &::placeholder {
+      line-height: 14px;
+      @include font-style-text(14px, 400, #808080);
+    }
+  }
+  &__select {
+    box-sizing: border-box;
+    padding: 0 13px 0 16px;
+    width: 297px;
+    height: 40px;
+    background: #f9f5e3;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 6px;
+    line-height: 14px;
+    @include font-style-text(14px, 400, #000000);
+    option {
+      @include font-style-text(14px, 400, #000000);
+    }
+  }
+}

@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import { words } from '../../../../lang/lang';
 import { stringValidSum } from '../../../../scripts/utils/utils';
 import { SliderAmount } from './SliderAmount';
+import { SectionFilingFields } from './SectionFilingFields';
 
 export const OnlineApplicationCreditCard = () => {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -35,7 +36,6 @@ export const OnlineApplicationCreditCard = () => {
               }
             </p>
           </div>
-
           <SliderAmount />
         </section>
         <section className="credit-card-online-app__container-right-part">
@@ -57,10 +57,17 @@ export const OnlineApplicationCreditCard = () => {
         </section>
       </section>
       <section className="credit-card-online-app__container-down-half">
-        <h2 className="credit-card-online-app__container-down-half__header"></h2>
-        <section className="credit-card-online-app__container-down-half__fields">
-          fillingField
-        </section>
+        <h2 className="credit-card-online-app__container-down-half__header">
+          {
+            words.loanPage.processGetCreditCard.UK.onlineApplicationCreditCard
+              .headerSectionsInput
+          }
+        </h2>
+        <SectionFilingFields />
+        <button className="credit-card-online-app__container-down-half__button">{
+            words.loanPage.processGetCreditCard.UK.onlineApplicationCreditCard
+              .button
+          }</button>
       </section>
     </section>
   );

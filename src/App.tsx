@@ -31,6 +31,7 @@ import './style/loanPage/sectionCardOffer/sectionCardOffer.scss';
 import './style/loanPage/decisionEmail/decisionEmail.scss';
 import './style/loanPage/onlineApplicationCreditCard/onlineApplicationCreditCard.scss';
 import './style/loanPage/sliderAmount/sliderAmount.scss';
+import './style/loanPage/fillingField/fillingField.scss';
 export const App = () => {
   const dispatch = useDispatch();
 
