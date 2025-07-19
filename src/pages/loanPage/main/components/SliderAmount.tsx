@@ -1,11 +1,15 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { words } from '../../../../lang/lang';
-import { stringAmount} from '../../../../scripts/utils/utils';
+import { stringAmount } from '../../../../scripts/utils/utils';
 
-export const SliderAmount = () => {
-  const [amount, setAmount] = useState(150000);
+type TSetAmount = {
+  amount: number;
+  onChangeAmount: (value: number) => void;
+};
+
+export const SliderAmount = ({ amount, onChangeAmount }: TSetAmount) => {
   const sliderRef = useRef<HTMLInputElement>(null);
-  const min = 15000;
+  const min = 150000;
   const max = 600000;
 
   const updateProgress = (amount: number) => {
@@ -17,7 +21,7 @@ export const SliderAmount = () => {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = Number(e.target.value);
-    setAmount(value);
+    onChangeAmount(value);
     updateProgress(value);
   };
 
@@ -37,8 +41,8 @@ export const SliderAmount = () => {
       <input
         type="range"
         ref={sliderRef}
-        min={15000}
-        max={600000}
+        min={min}
+        max={max}
         id="amount"
         step={1000}
         onChange={handleChange}
@@ -46,8 +50,8 @@ export const SliderAmount = () => {
         value={amount}
       />
       <div className="slider-amount__min-max">
-        <p>{stringAmount(15000)}</p>
-        <p>{stringAmount(600000)}</p>
+        <p>{stringAmount(min)}</p>
+        <p>{stringAmount(max)}</p>
       </div>
     </section>
   );
