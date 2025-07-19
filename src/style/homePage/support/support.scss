@@ -1,4 +1,6 @@
 @use '../../utility/sizeValue.scss' as *;
+@use '../../index.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
 $font-size-header: 30px;
 $font-size-title: 24px;
 $font-size-subtext: 30px;
@@ -97,6 +99,11 @@ $font-size-button-title: 16px;
   }
   &__button:active {
     background: #484b99;
+  }
+  &__error {
+    text-align: center;
+    padding: 35px 0;
+    @include font-style-text(16px, 500, #000000);
   }
   @media (max-width: $breakpoint-large-desktop) {
     width: 97.45%;
