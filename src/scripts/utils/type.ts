@@ -19,5 +19,17 @@ export type TArrayNewsData = {
 };
 
 export type TNewsData = {
-  data: TArrayNewsData
+  data: TArrayNewsData;
+};
+
+export type TFormValues = {
+  amount: number;
+  term: number;
+  firstName: string;
+  lastName: string;
+  middleName: string | null;
+  email: string;
+  birthdate: string | Date;
+  passportSeries: string;
+  passportNumber: string;
 };

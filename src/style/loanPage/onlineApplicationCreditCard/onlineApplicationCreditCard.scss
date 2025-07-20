@@ -5,7 +5,7 @@
 .credit-card-online-app {
   width: $main-width;
   margin: 0 auto 96px auto;
-  height: 584px;
+  height: 620px;
   background: #ffffff;
   box-shadow:
     0px 0px 8px rgba(0, 0, 0, 0.08),
@@ -77,4 +77,10 @@
       @include font-style-text(16px, 500, #000000);
     }
   }
+}
+.loader-container {
+  height: 620px;
+  margin: 0 auto 96px auto;
+  text-align: center;
+  @include font-style-text(34px, 500, #000000);
 }

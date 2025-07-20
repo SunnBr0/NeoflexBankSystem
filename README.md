@@ -18,6 +18,10 @@
 
 `yarn dev`
 
+И во втором терминале вводим: 
+
+`docker-compose up --build `
+
 После запуска переходим на сайт и вводим [http://localhost:5173](http://localhost:5173)
 
 

@@ -3,8 +3,6 @@
 @use '../../utility/buttonStyle.scss' as *;
 
 .filling-field {
-  //   display: flex;
-  //   flex-direction: column;
   &__header {
     display: flex;
     flex-direction: row;
@@ -14,8 +12,6 @@
     @include font-style-text(16px, 500, #1a202c);
   }
   &__star {
-    // width: 8px;
-    // height: 16px;
     line-height: 16px;
     color: #ff0000;
     @include font-style-text(16px, 500, #ff0000);
@@ -26,13 +22,18 @@
     width: 297px;
     height: 40px;
     background: #f9f5e3;
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    border: 3px solid rgba(128, 128, 128, 0.2);
     border-radius: 6px;
     line-height: 14px;
     @include font-style-text(14px, 400, #000000);
     &::placeholder {
       line-height: 14px;
       @include font-style-text(14px, 400, #808080);
+    }
+    &:focus {
+      outline: #5B35D5;
+      border-color: #5B35D5;
+      border: 3px solid #5B35D5;
     }
   }
   &__select {
@@ -48,5 +49,14 @@
     option {
       @include font-style-text(14px, 400, #000000);
     }
+  }
+  &--error {
+    border: 3px solid #ff5631;
+  }
+  &__text-error {
+    /* Incorrect email address */
+    margin: 2px 0 0 0;
+    color: #ff5631;
+    @include font-style-text(16px, 500, #ff5631);
   }
 }
