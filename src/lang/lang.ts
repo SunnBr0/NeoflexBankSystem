@@ -88,12 +88,24 @@ export const words = {
         header: 'Platinum digital credit card',
         title:
           'Our best credit card. Suitable for everyday spending and shopping. Cash withdrawals and transfers without commission and interest.',
+
         advantages: {
           'Up to 160 days': 'No percent',
           'Up to 600 000 ₽': 'Credit limit',
           '0 ₽': 'Card service is free',
         },
+        advantagesKeyDays:'Up to 160 days',
+        advantagesKeyRub:'Up to 600 000 ₽',
+        advantagesKeyZero:'0 ₽',
+
+        advantagesValueDays:'No percent',
+        advantagesValueRub:'Credit limit',
+        advantagesValueZero:'Card service is free',
+
         button: 'Apply for card',
+        TooltipDays:"When repaying the full debt up to 160 days.",
+        TooltipRub:"Over the limit willaccrue percent",
+        TooltipZero:'Promotion valid until December 31, 2022.',
       },
     },
     navigateBarCreditCards: {

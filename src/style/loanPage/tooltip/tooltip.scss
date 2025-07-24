@@ -1,0 +1,16 @@
+@use '../../index.scss' as *;
+@use '../../utility/buttonStyle.scss' as *;
+.tooltip {
+  background: #3d3d3d;
+  width: 170px;
+  height: 36px;
+  position: absolute;
+  margin: 59px 0 0 -10px;
+  p {
+    @include font-style-text(12px, 500, #ffffff);
+    line-height: 12px;
+    letter-spacing: 0.02em;
+    margin: 4px;
+  }
+}
+ 

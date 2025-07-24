@@ -22,7 +22,6 @@ export const Support = () => {
       throw new Error('invalid email');
     }
   };
-  console.log(isSubcribed);
 
   return (
     <section className="support">

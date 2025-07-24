@@ -11,6 +11,7 @@ type TCardOffer = {
   rate: number;
   insurance: boolean;
   salaryClient: boolean;
+  onClick: () => void;
 };
 export const CardOffer = ({
   requestSum,
@@ -20,6 +21,7 @@ export const CardOffer = ({
   rate,
   insurance,
   salaryClient,
+  onClick,
 }: TCardOffer) => {
  
   return (
@@ -75,7 +77,7 @@ export const CardOffer = ({
           </figure>
         )}
       </div>
-      <button className="credit-card-offer__button">
+      <button className="credit-card-offer__button" onClick={onClick}>
         {words.loanPage.processGetCreditCard.UK.button}
       </button>
     </article>

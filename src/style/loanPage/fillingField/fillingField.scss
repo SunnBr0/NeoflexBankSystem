@@ -5,6 +5,7 @@
 .filling-field {
   &__header {
     display: flex;
+    position: relative;
     flex-direction: row;
     line-height: 16px;
     margin-bottom: 8px;
@@ -31,9 +32,13 @@
       @include font-style-text(14px, 400, #808080);
     }
     &:focus {
-      outline: #5B35D5;
-      border-color: #5B35D5;
-      border: 3px solid #5B35D5;
+      outline: #5b35d5;
+      border-color: #5b35d5;
+      border: 3px solid #5b35d5;
+    }
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+      -webkit-appearance: none;
     }
   }
   &__select {
@@ -54,9 +59,14 @@
     border: 3px solid #ff5631;
   }
   &__text-error {
-    /* Incorrect email address */
+    position: absolute;
+    width: 200px;
     margin: 2px 0 0 0;
     color: #ff5631;
     @include font-style-text(16px, 500, #ff5631);
+  }
+  &__icon {
+    margin: -32px 0 0 257px;
+    position: absolute;
   }
 }

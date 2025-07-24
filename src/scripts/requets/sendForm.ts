@@ -5,12 +5,14 @@ export const sendForm = async (formData: TFormValues) => {
   const url = 'http://localhost:8080/application';
 
   try {
-    await axios.post(url, formData, {
+    const value  = await axios.post(url, formData, {
       headers: {
         'Content-Type': 'application/json',
       },
     });
+    
     await sleep(1000);
+    return value
   } catch (error) {
     console.error('Ошибка при отправке email:', error);
     throw error;

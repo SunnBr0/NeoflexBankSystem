@@ -15,9 +15,11 @@
   padding: 32px;
   &__container-down-half {
     &__fields {
+      height: 184px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-between;
       gap: 16px;
       margin-bottom: 24px;
     }
