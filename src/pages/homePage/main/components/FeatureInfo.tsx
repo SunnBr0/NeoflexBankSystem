@@ -19,7 +19,7 @@ export const FeatureInfo = () => {
           {words.homePage.featureInfo.UK.listFeatures.map((item, index) => (
             <li key={`${item}-${index}`} className="feature-info__item">
               <figure
-                className={`feature-info__icon feature-info__icon-${index + 1}`}
+                className={`feature-info__icon feature-info__icon`}
               >
                 <img src={icon} alt="" />
               </figure>

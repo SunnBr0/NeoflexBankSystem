@@ -162,7 +162,7 @@ export const SectionFilingFields = ({
           required: 'Number is required',
           pattern: {
             value: /^\d{6}$/,
-            message: 'Series must be 4 digits',
+            message: 'Series must be 6 digits',
           },
         })}
         error={errors.passportNumber?.message as string}

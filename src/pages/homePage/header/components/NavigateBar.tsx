@@ -4,7 +4,6 @@ export const NavigateBar = () => {
   return (
     <>
       <a href='/' className="nav-bar__header">{words.homePage.navigation.UK.logo}</a>
-      {/* <p  className="nav-bar__header">{words.homePage.navigation.UK.logo}</p> */}
       <nav className="nav-bar__section">
         <ul className="nav-bar__list">
           {Object.entries(words.homePage.navigation.UK.siteSections).map(

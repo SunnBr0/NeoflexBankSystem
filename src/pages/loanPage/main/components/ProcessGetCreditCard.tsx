@@ -5,7 +5,6 @@ import { useSelector } from 'react-redux';
 import type { RootState } from '../../../../store/store';
 
 export const ProcessGetCreditCard = () => {
-  // сначала будет форма,потом будет выбор предложений ,потом сообщение,что оно ушло на почту
   const valueData = useSelector((state: RootState) => state.application.offers);
   const selected = useSelector(
     (state: RootState) => state.application.selectedOffer
